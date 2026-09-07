@@ -3,226 +3,491 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="/src/style.css" rel="stylesheet">
-      <link rel="stylesheet"
+
+  <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body class= "bg-white w-[100%] text-gray-900">
 
-    <!-- Navbar -->
-    <nav>
-     <div class="flex items-center justify-between p-2 h-20 ">
+<body class="bg-white w-full overflow-x-hidden text-gray-900">
 
-        <!-- Logo -->
-        <div>
-            <img src="public/images.png" class="w-30">
-        </div>
+<!-- ================= NAVBAR ================= -->
+
+<nav class="relative z-50 bg-white">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+              flex items-center justify-between
+              h-16 sm:h-20">
+
+    <!-- LOGO -->
+    <div>
+      <img src="public/images.png"
+           class="w-24 sm:w-28"
+           alt="Buffer Logo">
+    </div>
 
 
-        <!-- Menu -->
-       <div class="flex items-center gap-2 text-xl">
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex items-center gap-1 lg:gap-2 text-base lg:text-xl">
 
-    <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
         Features
-    </a>
+      </a>
 
-    <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
         Integrations
-    </a>
+      </a>
 
-    <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
         Made for
-    </a>
+      </a>
 
-    <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
         Resources
-    </a>
+      </a>
 
-    <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
         Pricing
-    </a>
-
-</div>
-
-
-<!-- Buttons -->
-<div class="flex items-center gap-4">
-
-    <!-- Login Button -->
-    <button class="px-7 py-3 border border-gray-300 rounded-full
-                   hover:bg-gray-100 hover:scale-105
-                   transition duration-300">
-        Log in
-    </button>
-
-    <!-- Get Started Button -->
-    <button class="bg-green-500 text-white px-11 py-3 rounded-full
-                   hover:bg-green-400 hover:scale-105
-                   transition duration-300">
-        Get started for free
-    </button>
-
-</div>
-     </div>
-
-    </nav>
-    <!-- Green Announcement Bar -->
-<div class="w-full bg-[#d9f0c5] py-2 flex  justify-center gap-3">
-
-    <!-- New Box -->
-    <span class="bg-green-900 text-white text-base px-2 py-1 rounded">
-        New
-    </span>
-
-    <!-- Text -->
-    <p class="text-gray-700 text-normal">
-        Insights is here.
-    </p>
-
-    <a href="#" class="text-gray-700 text-normal hover:underline">
-        Learn more →
-    </a>
-
-</div>
-<!-- Hero Section -->
-<section class="relative bg-white min-h-[600px] flex items-center justify-center overflow-hidden">
-<!-- Bluesky -->
-<div class="absolute top-10 left-[15%] text-blue-500 text-4xl
-            transition-all duration-500 hover:scale-125 hover:translate-x-3">
-    🦋
-</div>
-
-<!-- X -->
-<div class="absolute top-5 left-[31%] text-5xl
-            transition-all duration-500 hover:scale-125 hover:-translate-y-3">
-    <i class="fa-brands fa-x-twitter"></i>
-</div>
-
-<!-- YouTube -->
-<div class="absolute top-28 left-[8%] text-red-500 text-4xl
-            transition-all duration-500 hover:scale-125 hover:translate-x-3 hover:-translate-y-2">
-    <i class="fa-brands fa-youtube"></i>
-</div>
-
-<!-- LinkedIn -->
-<div class="absolute top-[280px] left-[15%] text-blue-600 text-4xl
-            transition-all duration-500 hover:scale-125 hover:translate-x-2">
-    <i class="fa-brands fa-linkedin"></i>
-</div>
-
-<!-- Instagram -->
-<div class="absolute top-[430px] right-[9%] text-pink-500 text-4xl
-            transition-all duration-500 hover:scale-125 hover:-translate-y-3">
-    <i class="fa-brands fa-instagram"></i>
-</div>
-
-<!-- TikTok -->
-<div class="absolute bottom-2 left-[43%] text-5xl
-            transition-all duration-500 hover:scale-125 hover:-translate-y-4">
-    <i class="fa-brands fa-tiktok"></i>
-</div>
-
-
-
-<!-- Facebook -->
-<div class="absolute top-[280px] right-[13%] text-blue-600 text-4xl
-            transition-all duration-500 hover:scale-125 hover:-translate-x-3">
-    <i class="fa-brands fa-facebook"></i>
-</div>
-
-<!-- Threads -->
-<div class="absolute top-[300px] right-[22%] text-4xl
-            transition-all duration-500 hover:scale-125 hover:-translate-y-3">
-    <i class="fa-brands fa-threads"></i>
-</div>
-<!-- Pinterest -->
-<div class="absolute top-[10px] right-[18%] text-red-600 text-4xl
-            transition-all duration-500 hover:scale-125 hover:-translate-x-3">
-    <i class="fa-brands fa-pinterest"></i>
-</div>
-
-
-
-
-
-
-    <!-- Hero Content -->
-    <div class="relative z-10 text-center max-w-4xl mx-auto px-6 py-20">
-
-        <h1 class="text-6xl font-bold leading-tight text-gray-900">
-            Your social media
-            <br>
-            workspace
-        </h1>
-
-        <p class="text-xl text-gray-600 mt-6">
-            Connected to every platform and tool you use.
-        </p>
-
-
-        <!-- Search Bar -->
-        <div class="mt-8 mx-auto w-[650px] bg-white border border-gray-400
-                    rounded-full p-2 flex items-center">
-
-            <input
-                type="email"
-                placeholder="Enter your email..."
-                class="flex-1 px-5 py-3 outline-none rounded-full text-gray-700"
-            >
-
-            <button
-                class="bg-green-400 text-white px-7 py-3 rounded-full
-                       hover:bg-green-600 transition duration-300">
-                Get started for free →
-            </button>
-
-        </div>
-
-        <p class="text-xs text-gray-500 mt-4">
-            By entering your email, you agree to receive emails from Buffer.
-        </p>
+      </a>
 
     </div>
 
-</section>
-<div class="flex items-center gap-6 px-10 py-9">
 
-    <!-- Left Line -->
-    <div class="flex-1 h-px bg-gray-300"></div>
+    <!-- DESKTOP BUTTONS -->
+    <div class="hidden md:flex items-center gap-2 lg:gap-4">
 
-    <!-- Text -->
-    <h2 class="text-center text-sm md:text-xl font-semibold text-gray-500 whitespace-nowrap">
-        243,770 creators, brands, and agencies using Buffer
-    </h2>
+      <button
+        class="px-5 lg:px-7 py-2.5 lg:py-3
+               border border-gray-300 rounded-full
+               hover:bg-gray-100 hover:scale-105
+               transition duration-300">
+        Log in
+      </button>
 
-    <!-- Right Line -->
-    <div class="flex-1 h-px bg-gray-300"></div>
+      <button
+        class="bg-green-500 text-white
+               px-6 lg:px-11 py-2.5 lg:py-3
+               rounded-full
+               hover:bg-green-400 hover:scale-105
+               transition duration-300">
+        Get started for free
+      </button>
+
+    </div>
+
+
+    <!-- MOBILE HAMBURGER -->
+    <button id="menuBtn"
+            class="md:hidden
+                   w-10 h-10
+                   flex items-center justify-center
+                   text-gray-900 text-2xl
+                   rounded-lg
+                   hover:bg-gray-100
+                   transition"
+            aria-label="Open menu"
+            aria-expanded="false">
+
+      <i id="menuIcon" class="fa-solid fa-bars"></i>
+
+    </button>
+
+  </div>
+
+
+  <!-- ================= MOBILE MENU ================= -->
+
+  <div id="mobileMenu"
+       class="hidden md:hidden
+              border-t border-gray-200
+              bg-white
+              px-4 py-5
+              shadow-lg">
+
+    <div class="flex flex-col gap-2">
+
+      <a href="#"
+         class="px-4 py-3 rounded-lg
+                hover:bg-gray-100 transition">
+        Features
+      </a>
+
+      <a href="#"
+         class="px-4 py-3 rounded-lg
+                hover:bg-gray-100 transition">
+        Integrations
+      </a>
+
+      <a href="#"
+         class="px-4 py-3 rounded-lg
+                hover:bg-gray-100 transition">
+        Made for
+      </a>
+
+      <a href="#"
+         class="px-4 py-3 rounded-lg
+                hover:bg-gray-100 transition">
+        Resources
+      </a>
+
+      <a href="#"
+         class="px-4 py-3 rounded-lg
+                hover:bg-gray-100 transition">
+        Pricing
+      </a>
+
+      <div class="border-t border-gray-200 my-2"></div>
+
+      <button
+        class="w-full px-5 py-3
+               border border-gray-300 rounded-full
+               hover:bg-gray-100 transition">
+        Log in
+      </button>
+
+      <button
+        class="w-full bg-green-500 text-white
+               px-5 py-3 rounded-full
+               hover:bg-green-400 transition">
+        Get started for free
+      </button>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- ================= ANNOUNCEMENT BAR ================= -->
+
+<div class="w-full bg-[#d9f0c5]
+            py-2 px-3
+            flex flex-wrap
+            items-center justify-center
+            gap-2 sm:gap-3
+            text-center">
+
+  <span class="bg-green-900 text-white
+               text-xs sm:text-sm md:text-base
+               px-2 py-1 rounded">
+    New
+  </span>
+
+  <p class="text-gray-700 text-sm sm:text-base">
+    Insights is here.
+  </p>
+
+  <a href="#"
+     class="text-gray-700 text-sm sm:text-base
+            hover:underline">
+    Learn more →
+  </a>
 
 </div>
-<!-- MARQUEE -->
 
-<div class="overflow-hidden mt-10">
 
-  <div class="flex gap-16 animate-marquee w-max">
+<!-- ================= HERO SECTION ================= -->
 
-    <img src="public/benefit.jpeg" class="w-28" alt="Benefit">
-    <img src="public/clash.jpeg" class="w-28" alt="Clash of Clans">
-    <img src="public/crocs.jpeg" class="w-28" alt="Crocs">
-    <img src="public/elevenlabs.jpeg" class="w-28" alt="ElevenLabs">
-    <img src="public/etallic.jpeg" class="w-28" alt="Metallica">
-    <img src="public/pizza.jpeg" class="w-28" alt="Pizza Hut">
-    <img src="public/vice.jpeg" class="w-28" alt="Vice">
-    <img src="public/wired.jpeg" class="w-28" alt="Wired">
+<section
+  class="relative bg-white
+         min-h-[520px] sm:min-h-[600px]
+         flex items-center justify-center
+         overflow-hidden px-4">
+
+
+  <!-- FLOATING ICONS -->
+
+  <!-- Bluesky -->
+  <div class="hidden sm:block
+              absolute top-10 left-[10%] lg:left-[15%]
+              text-blue-500 text-3xl lg:text-4xl
+              transition-all duration-500
+              hover:scale-125 hover:translate-x-3">
+    🦋
+  </div>
+
+
+  <!-- X -->
+  <div class="hidden sm:block
+              absolute top-5 left-[25%] lg:left-[31%]
+              text-4xl lg:text-5xl
+              transition-all duration-500
+              hover:scale-125 hover:-translate-y-3">
+    <i class="fa-brands fa-x-twitter"></i>
+  </div>
+
+
+  <!-- YouTube -->
+  <div class="hidden sm:block
+              absolute top-28 left-[5%] lg:left-[8%]
+              text-3xl lg:text-4xl text-red-500
+              transition-all duration-500
+              hover:scale-125
+              hover:translate-x-3
+              hover:-translate-y-2">
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+
+
+  <!-- LinkedIn -->
+  <div class="hidden sm:block
+              absolute top-[280px] left-[10%] lg:left-[15%]
+              text-3xl lg:text-4xl text-blue-600
+              transition-all duration-500
+              hover:scale-125 hover:translate-x-2">
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+
+
+  <!-- Instagram -->
+  <div class="hidden sm:block
+              absolute top-[430px] right-[5%] lg:right-[9%]
+              text-3xl lg:text-4xl text-pink-500
+              transition-all duration-500
+              hover:scale-125 hover:-translate-y-3">
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+
+
+  <!-- TikTok -->
+  <div class="hidden sm:block
+              absolute bottom-2 left-[43%]
+              text-4xl lg:text-5xl
+              transition-all duration-500
+              hover:scale-125 hover:-translate-y-4">
+    <i class="fa-brands fa-tiktok"></i>
+  </div>
+
+
+  <!-- Facebook -->
+  <div class="hidden sm:block
+              absolute top-[280px] right-[8%] lg:right-[13%]
+              text-3xl lg:text-4xl text-blue-600
+              transition-all duration-500
+              hover:scale-125 hover:-translate-x-3">
+    <i class="fa-brands fa-facebook"></i>
+  </div>
+
+
+  <!-- Threads -->
+  <div class="hidden sm:block
+              absolute top-[300px] right-[15%] lg:right-[22%]
+              text-3xl lg:text-4xl
+              transition-all duration-500
+              hover:scale-125 hover:-translate-y-3">
+    <i class="fa-brands fa-threads"></i>
+  </div>
+
+
+  <!-- Pinterest -->
+  <div class="hidden sm:block
+              absolute top-[10px] right-[12%] lg:right-[18%]
+              text-3xl lg:text-4xl text-red-600
+              transition-all duration-500
+              hover:scale-125 hover:-translate-x-3">
+    <i class="fa-brands fa-pinterest"></i>
+  </div>
+
+
+  <!-- ================= HERO CONTENT ================= -->
+
+  <div class="relative z-10
+              text-center
+              w-full max-w-4xl
+              mx-auto
+              px-2 sm:px-6
+              py-16 sm:py-20">
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl
+               font-bold
+               leading-tight
+               text-gray-900">
+
+      Your social media
+      <br>
+      workspace
+
+    </h1>
+
+
+    <p class="text-base sm:text-lg md:text-xl
+              text-gray-600
+              mt-5 sm:mt-6">
+
+      Connected to every platform and tool you use.
+
+    </p>
+
+
+    <!-- SEARCH BAR -->
+
+    <div
+      class="mt-7 sm:mt-8
+             mx-auto
+             w-full max-w-[650px]
+             bg-white
+             border border-gray-400
+             rounded-2xl sm:rounded-full
+             p-2
+             flex flex-col sm:flex-row
+             items-stretch sm:items-center
+             gap-2">
+
+      <input
+        type="email"
+        placeholder="Enter your email..."
+        class="flex-1 min-w-0
+               px-4 sm:px-5
+               py-3
+               outline-none
+               rounded-full
+               text-gray-700
+               text-sm sm:text-base">
+
+      <button
+        class="w-full sm:w-auto
+               bg-green-400
+               text-white
+               px-5 sm:px-7
+               py-3
+               rounded-full
+               whitespace-nowrap
+               hover:bg-green-600
+               transition duration-300">
+
+        Get started for free →
+
+      </button>
+
+    </div>
+
+
+    <p class="text-xs text-gray-500 mt-4 px-2">
+
+      By entering your email, you agree to receive emails from Buffer.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CREATOR COUNT ================= -->
+
+<div
+  class="flex flex-col sm:flex-row
+         items-center
+         gap-4 sm:gap-6
+         px-4 sm:px-8 lg:px-10
+         py-7 sm:py-9">
+
+  <div class="w-full flex-1 h-px bg-gray-300"></div>
+
+  <h2
+    class="text-center
+           text-xs sm:text-sm md:text-xl
+           font-semibold
+           text-gray-500">
+
+    243,770 creators, brands, and agencies using Buffer
+
+  </h2>
+
+  <div class="w-full flex-1 h-px bg-gray-300"></div>
+
+</div>
+
+
+<!-- ================= MARQUEE ================= -->
+
+<div class="overflow-hidden mt-6 sm:mt-10">
+
+  <div
+    class="flex
+           gap-8 sm:gap-12 md:gap-16
+           animate-marquee
+           w-max
+           items-center">
+
+    <img src="public/benefit.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Benefit">
+
+    <img src="public/clash.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Clash of Clans">
+
+    <img src="public/crocs.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Crocs">
+
+    <img src="public/elevenlabs.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="ElevenLabs">
+
+    <img src="public/etallic.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Metallica">
+
+    <img src="public/pizza.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Pizza Hut">
+
+    <img src="public/vice.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Vice">
+
+    <img src="public/wired.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Wired">
+
 
     <!-- DUPLICATE -->
-    <img src="public/benefit.jpeg" class="w-28" alt="Benefit">
-    <img src="public/clash.jpeg" class="w-28" alt="Clash of Clans">
-    <img src="public/crocs.jpeg" class="w-28" alt="Crocs">
-    <img src="public/elevenlabs.jpeg" class="w-28" alt="ElevenLabs">
-    <img src="public/etallic.jpeg" class="w-28" alt="Metallica">
-    <img src="public/pizza.jpeg" class="w-28" alt="Pizza Hut">
-    <img src="public/vice.jpeg" class="w-28" alt="Vice">
-    <img src="public/wired.jpeg" class="w-28" alt="Wired">
+
+    <img src="public/benefit.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Benefit">
+
+    <img src="public/clash.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Clash of Clans">
+
+    <img src="public/crocs.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Crocs">
+
+    <img src="public/elevenlabs.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="ElevenLabs">
+
+    <img src="public/etallic.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Metallica">
+
+    <img src="public/pizza.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Pizza Hut">
+
+    <img src="public/vice.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Vice">
+
+    <img src="public/wired.jpeg"
+         class="w-20 sm:w-24 md:w-28"
+         alt="Wired">
 
   </div>
 
@@ -231,1008 +496,1244 @@
 
 <style>
 
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
+@keyframes marquee {
 
-    to {
-      transform: translateX(-50%);
-    }
+  from {
+    transform: translateX(0);
   }
 
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
+  to {
+    transform: translateX(-50%);
   }
+
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
 
 </style>
-<!-- Main Container -->
-<div class="w-full px-10 py-12">
-
-    <!-- 2 x 2 -->
-    <div class="grid grid-cols-2 gap-6">
-
-        <!-- Card 1 -->
-        <div class="bg-white rounded-3xl overflow-hidden shadow-sm 
-        transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl">
-
-            <!-- Image -->
-            <div class="bg-[#f9b3f5] h-[500px] rounded-2xl flex items-center justify-center px-1.5">
-
-                <img src="public/pink.png"
-                     class="w-full h-full object-contain
-                      transition-transform duration-500 ease-in-out
-                    hover:scale-110">
-
-            </div>
-
-            <!-- Text -->
-            <div class="bg-white p-8 h-[200px]">
-
-                <p class="text-purple-600 font-semibold">
-                    PUBLISH
-                </p>
-
-                <h2 class="text-3xl font-bold text-gray-900 mt-3">
-                   The most complete set of publishing integrations, ever
-                </h2>
-
-                <p class="text-gray-600 mt-4 text-xl">
-                    Schedule your content to the most popular platform including Facebook,
-                    Instagram, Tiktok, Linkedin, Threads, Bluesky, YouTube Shorts, Pintrest,
-                    Google Business, Mastodon and X.
-                </p>
-                <a href="#"
-   class="inline-block mt-8 text-gray-700 text-lg underline hover:text-gray-900 transition">
-    Learn more →
-</a>
-
-            </div>
-
-        </div>
 
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-3xl overflow-hidden shadow-sm *
-        transition-all duration-500 ease-in-out
-            hover:-translate-y-3 hover:shadow-2xl">
+<!-- ================= MAIN FEATURE CARDS ================= -->
 
-            <!-- Image -->
-            <div class="bg-[#98f4a8] h-[500px] rounded-2xl flex items-center justify-center px-10">
-
-                <img src="public/pinkk.png"
-                     class="w-full h-full object-contain
-                      transition-transform duration-500 ease-in-out
-                    hover:scale-110">
-
-            </div>
-
-            <!-- Text -->
-            <div class="bg-white p-8 h-[350px]">
-
-                <p class="text-orange-600 font-semibold">
-                    CREATE
-                </p>
-
-                <h2 class="text-3xl font-bold text-gray-900 mt-3">
-                    Turn any idea into the perfect post
-                </h2>
-
-                <p class="text-gray-600 mt-4 text-xl">
-                   Whether you're flying solo or working with a team, Buffer has all
-                    the features to help you create, organize, and repurpose your content for
-                     any channe. There's also an AI Assistant if you need it.
-                </p>
-                <a href="#"
-   class="inline-block mt-14 text-gray-700 text-lg underline hover:text-gray-900 transition">
-    Learn more →
-</a>
-
-            </div>
-
-        </div>
+<div class="w-full
+            px-4 sm:px-6 lg:px-10
+            py-10 sm:py-12">
 
 
-        <!-- Card 3 -->
-        <div class="bg-white rounded-3xl overflow-hidden shadow-sm 
-        transition-all duration-500 ease-in-out
-            hover:-translate-y-3 hover:shadow-2xl">
-
-            <div class="bg-orange-200 h-[500px] rounded-2xl flex items-center justify-center p-6">
-
-                <img src="public/create.avif"
-                     class="w-full h-full object-contain
-                      transition-transform duration-500 ease-in-out
-                    hover:scale-110">
-
-            </div>
-
-            <div class="bg-white p-8 h-[300px]">
-
-                <p class="text-green-600 font-semibold">
-                    ENGAGE
-                </p>
-
-                <h2 class="text-3xl font-bold text-gray-900 mt-3">
-                    Reply to comments in a flash
-                </h2>
-
-                <p class="text-gray-600 mt-4 text-xl">
-                 Engage with your audience across all your channels at 10x speed. Buffer will 
-                 help you triage and respond to comments from one simple dashboard.
-                </p>
-                <a href="#"
-   class="inline-block mt-9 text-gray-700 text-lg underline hover:text-gray-900 transition">
-    Learn more →
-</a>
-
-            </div>
-
-        </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 
-<!-- Card 4 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-sm
-            transition-all duration-500 ease-in-out
-            hover:-translate-y-3 hover:shadow-2xl">
+    <!-- ================= CARD 1 ================= -->
 
-    <!-- Image -->
-    <div class="bg-sky-300 h-[500px] rounded-2xl 
-                flex items-center justify-center p-6
-                overflow-hidden">
+    <div
+      class="bg-white
+             rounded-3xl
+             overflow-hidden
+             shadow-sm
+             transition-all duration-500
+             ease-in-out
+             hover:-translate-y-3
+             hover:shadow-2xl">
 
-        <img src="public/buffer-api.webp"
-             class="w-full h-full object-contain
-                    transition-transform duration-500 ease-in-out
-                    hover:scale-110">
+      <!-- IMAGE -->
 
-    </div>
+      <div
+        class="bg-[#f9b3f5]
+               h-[300px] sm:h-[400px] md:h-[500px]
+               rounded-2xl
+               flex items-center justify-center
+               px-1.5
+               overflow-hidden">
 
-    <!-- Text -->
-    <div class="bg-white p-8 h-[250px]">
+        <img
+          src="public/pink.png"
+          class="w-full h-full
+                 object-contain
+                 transition-transform
+                 duration-500
+                 ease-in-out
+                 hover:scale-110"
+          alt="Publish">
 
-        <p class="text-pink-600 font-semibold">
-            COLLABORATE
+      </div>
+
+
+      <!-- TEXT -->
+
+      <div class="bg-white p-6 sm:p-8 min-h-[300px]">
+
+        <p class="text-purple-600 font-semibold">
+          PUBLISH
         </p>
 
-        <h2 class="text-3xl font-bold text-gray-900 mt-3">
-            Answers, not just analytics
+        <h2
+          class="text-2xl sm:text-3xl
+                 font-bold
+                 text-gray-900
+                 mt-3">
+
+          The most complete set of publishing integrations, ever
+
         </h2>
 
-        <p class="text-gray-600 mt-4 text-xl">
-            Whether it's basic analytics or in-depth reporting.
-            Buffer will help you learn what works and how to improve.
+        <p
+          class="text-gray-600
+                 mt-4
+                 text-base sm:text-lg md:text-xl">
+
+          Schedule your content to the most popular platform including Facebook,
+          Instagram, Tiktok, Linkedin, Threads, Bluesky, YouTube Shorts, Pintrest,
+          Google Business, Mastodon and X.
+
         </p>
 
-        <a href="#"
-           class="inline-block mt-13 text-gray-700 text-lg
-                  underline hover:text-gray-900 transition">
-            Learn more →
+        <a
+          href="#"
+          class="inline-block
+                 mt-6
+                 text-gray-700
+                 text-base sm:text-lg
+                 underline
+                 hover:text-gray-900
+                 transition">
+
+          Learn more →
+
         </a>
 
-    </div>
-</div>
-</div>
-
-<!-- And so much more -->
-<div class="w-full text-center py-16">
-
-    <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">
-        …and so much more!
-    </h2>
-
-</div>
-
-
-<!-- More Features -->
-<div class="w-full px-2  pb-18">
-
-    <div class="grid grid-cols-4 gap-5">
-
-        <!-- Collaborate -->
-        <div class="text-left border p-3 border-gray-200 rounded-3xl overflow-hidden
-                    transition-all duration-500 hover:-translate-y-2 hover:shadow-lg">
-
-            <!-- Image -->
-            <div class="bg-[#f9b3f5] h-[250px] rounded-2xl w-full 
-                        flex items-center justify-center
-                        overflow-hidden">
-
-                <img src="public/collaborate.webp"
-                     class="w-full h-full object-contain
-                            transition-transform duration-500
-                            hover:scale-105">
-
-            </div>
-
-            <!-- Text -->
-            <div class="p-5">
-
-                <h3 class="text-lg font-medium text-gray-900">
-                    Collaborate
-                </h3>
-
-                <p class="text-gray-600 mt-3 text-base">
-                    Manage, edit, and approve social media posts
-                    from your team.
-                </p>
-
-                <a href="#"
-                   class="inline-block mt-5 text-gray-700 underline
-                          hover:text-black transition">
-                    Learn more →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Mobile App -->
-        <div class="text-left border p-2 border-gray-200 rounded-3xl overflow-hidden
-                    transition-all duration-500 hover:-translate-y-2 hover:shadow-lg">
-
-            <!-- Image -->
-            <div class="bg-[#cd73f0] h-[250px] w-full rounded-2xl
-                        flex items-center justify-center
-                        overflow-hidden">
-
-                <img src="public/shared.avif"
-                     class="w-full h-full object-contain
-                            transition-transform duration-500
-                            hover:scale-105">
-
-            </div>
-
-            <!-- Text -->
-            <div class="p-5">
-
-                <h3 class="text-lg font-medium text-gray-900">
-                    Mobile app
-                </h3>
-
-                <p class="text-gray-600 mt-3 text-base">
-                    Manage your social media accounts
-                    from anywhere.
-                </p>
-
-                <a href="#"
-                   class="inline-block mt-5 text-gray-700 underline
-                          hover:text-black transition">
-                    Learn more →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Start Page -->
-        <div class="text-left border p-2 border-gray-200 rounded-3xl overflow-hidden
-                    transition-all duration-500 hover:-translate-y-2 hover:shadow-lg">
-
-            <!-- Image -->
-            <div class="bg-[#edc256] h-[250px] rounded-2xl w-full
-                        flex items-center justify-center
-                        overflow-hidden">
-
-                <img src="public/approval.avif"
-                     class="w-full h-full object-contain
-                            transition-transform duration-500
-                            hover:scale-105">
-
-            </div>
-
-            <!-- Text -->
-            <div class="p-5">
-
-                <h3 class="text-lg font-medium text-gray-900">
-                    Start page
-                </h3>
-
-                <p class="text-gray-600 mt-3 text-base">
-                    Turn your social bio into a powerful,
-                    personalized hub.
-                </p>
-
-                <a href="#"
-                   class="inline-block mt-5 text-gray-700 underline
-                          hover:text-black transition">
-                    Learn more →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- AI Assistant -->
-        <div class="text-left border p-2 border-gray-200 rounded-3xl overflow-hidden
-                    transition-all duration-500 hover:-translate-y-2 hover:shadow-lg">
-
-            <!-- Image -->
-            <div class="bg-[#4ed9ee] rounded-2xl h-[250px] w-full
-                        flex items-center justify-center
-                        overflow-hidden">
-
-                <img src="public/content.avif"
-                     class="w-full h-full object-contain
-                            transition-transform duration-500
-                            hover:scale-105">
-
-            </div>
-
-            <!-- Text -->
-            <div class="p-5">
-
-                <h3 class="text-lg font-medium text-gray-900">
-                    AI assistant
-                </h3>
-
-                <p class="text-gray-600 mt-3 text-base">
-                    Brainstorm ideas, rewrite content, and craft
-                    platform-specific posts.
-                </p>
-
-                <a href="#"
-                   class="inline-block mt-5 text-gray-700 underline
-                          hover:text-black transition">
-                    Learn more →
-                </a>
-
-            </div>
-
-        </div>
+      </div>
 
     </div>
 
-</div>
-<!-- Connect Accounts Navbar -->
-<div class="w-full mx-6 px-10 py-10
-            bg-gray-200 rounded-2xl">
 
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- ================= CARD 2 ================= -->
 
-        <!-- Left Text -->
-        <h2 class="text-2xl font-semibold text-gray-900 whitespace-nowrap">
-            Connect your favorite accounts
+    <div
+      class="bg-white
+             rounded-3xl
+             overflow-hidden
+             shadow-sm
+             transition-all duration-500
+             ease-in-out
+             hover:-translate-y-3
+             hover:shadow-2xl">
+
+      <!-- IMAGE -->
+
+      <div
+        class="bg-[#98f4a8]
+               h-[300px] sm:h-[400px] md:h-[500px]
+               rounded-2xl
+               flex items-center justify-center
+               px-6 sm:px-10
+               overflow-hidden">
+
+        <img
+          src="public/pinkk.png"
+          class="w-full h-full
+                 object-contain
+                 transition-transform
+                 duration-500
+                 ease-in-out
+                 hover:scale-110"
+          alt="Create">
+
+      </div>
+
+
+      <!-- TEXT -->
+
+      <div class="bg-white p-6 sm:p-8 min-h-[330px]">
+
+        <p class="text-orange-600 font-semibold">
+          CREATE
+        </p>
+
+        <h2
+          class="text-2xl sm:text-3xl
+                 font-bold
+                 text-gray-900
+                 mt-3">
+
+          Turn any idea into the perfect post
+
         </h2>
 
+        <p
+          class="text-gray-600
+                 mt-4
+                 text-base sm:text-lg md:text-xl">
 
-        <!-- Right Icons -->
-        <div class="flex items-center gap-8">
+          Whether you're flying solo or working with a team, Buffer has all
+          the features to help you create, organize, and repurpose your content
+          for any channe. There's also an AI Assistant if you need it.
 
-            <!-- LinkedIn -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-linkedin-in text-4xl text-blue-600
-                          transition-transform duration-300 group-hover:scale-125"></i>
+        </p>
 
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    LinkedIn
-                </span>
-            </div>
+        <a
+          href="#"
+          class="inline-block
+                 mt-6
+                 text-gray-700
+                 text-base sm:text-lg
+                 underline
+                 hover:text-gray-900
+                 transition">
 
+          Learn more →
 
-            <!-- Threads -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-threads text-4xl text-black
-                          transition-transform duration-300 group-hover:scale-125"></i>
+        </a>
 
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    Threads
-                </span>
-            </div>
-
-
-            <!-- Pinterest -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-pinterest text-4xl text-red-600
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    Pinterest
-                </span>
-            </div>
-
-
-            <!-- Bluesky -->
-            <div class="relative group text-center">
-                <span class="text-4xl cursor-pointer
-                             transition-transform duration-300
-                             group-hover:scale-125">
-                    🦋
-                </span>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    Bluesky
-                </span>
-            </div>
-
-
-            <!-- YouTube -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-youtube text-4xl text-red-600
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    YouTube
-                </span>
-            </div>
-
-
-            <!-- X -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-x-twitter text-4xl text-black
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    X
-                </span>
-            </div>
-
-
-            <!-- Instagram -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-instagram text-4xl text-pink-500
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    Instagram
-                </span>
-            </div>
-
-
-            <!-- TikTok -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-tiktok text-4xl text-black
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    TikTok
-                </span>
-            </div>
-
-
-            <!-- Facebook -->
-            <div class="relative group text-center">
-                <i class="fa-brands fa-facebook text-4xl text-blue-600
-                          transition-transform duration-300 group-hover:scale-125"></i>
-
-                <span class="absolute top-10 left-1/2 -translate-x-1/2
-                             text-sm text-gray-700 whitespace-nowrap
-                             opacity-0 group-hover:opacity-100
-                             transition duration-300">
-                    Facebook
-                </span>
-            </div>
-            <!-- Google -->
-<div class="relative group text-center">
-    <i class="fa-brands fa-google text-4xl text-blue-500
-              transition-transform duration-300
-              group-hover:scale-125"></i>
-
-    <span class="absolute top-10 left-1/2 -translate-x-1/2
-                 text-sm text-gray-700 whitespace-nowrap
-                 opacity-0 group-hover:opacity-100
-                 transition duration-300">
-        Google
-    </span>
-</div>
-
-
-<!-- Dropbox -->
-<div class="relative group text-center">
-    <i class="fa-brands fa-dropbox text-4xl text-blue-600
-              transition-transform duration-300
-              group-hover:scale-125"></i>
-
-    <span class="absolute top-10 left-1/2 -translate-x-1/2
-                 text-sm text-gray-700 whitespace-nowrap
-                 opacity-0 group-hover:opacity-100
-                 transition duration-300">
-        Dropbox
-    </span>
-</div>
-
-        </div>
-
-    </div>
-
-</div>
-<!-- Audience Buttons -->
-<div class="w-full px-10 py-12">
-
-    <!-- 3 Buttons -->
-    <div class="flex items-center justify-center gap-3 mb-10">
-
-        <!-- Creators -->
-        <button class="px-6 py-2.5 rounded-full border border-gray-700
-                       bg-[#e9ddff] text-gray-900 text-base
-                       transition-all duration-300
-                       hover:-translate-y-1 hover:shadow-md">
-            Creators
-        </button>
-
-        <!-- Small Businesses -->
-        <button class="px-6 py-2.5 rounded-full border border-gray-700
-                       bg-white text-gray-900 text-base
-                       transition-all duration-300
-                       hover:bg-gray-100 hover:-translate-y-1 hover:shadow-md">
-            Small businesses
-        </button>
-
-        <!-- Agencies -->
-        <button class="px-6 py-2.5 rounded-full border border-gray-700
-                       bg-white text-gray-900 text-base
-                       transition-all duration-300
-                       hover:bg-gray-100 hover:-translate-y-1 hover:shadow-md">
-            Agencies
-        </button>
+      </div>
 
     </div>
 
 
-    <!-- Main Section -->
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center">
+    <!-- ================= CARD 3 ================= -->
 
-        <!-- LEFT SIDE -->
-        <div class="px-8">
+    <div
+      class="bg-white
+             rounded-3xl
+             overflow-hidden
+             shadow-sm
+             transition-all duration-500
+             ease-in-out
+             hover:-translate-y-3
+             hover:shadow-2xl">
 
-            <h2 class="text-3xl font-semibold leading-tight text-gray-900">
-                Grow from zero →
-                one → one million
-            </h2>
+      <!-- IMAGE -->
 
-            <p class="text-gray-600 text-lg mt-6 leading-relaxed">
-                Whether you’re just getting started on your creator journey
-                or scaling your audience to new heights, Buffer will get your
-                content in front of more people.
-            </p>
+      <div
+        class="bg-orange-200
+               h-[300px] sm:h-[400px] md:h-[500px]
+               rounded-2xl
+               flex items-center justify-center
+               p-6
+               overflow-hidden">
 
+        <img
+          src="public/create.avif"
+          class="w-full h-full
+                 object-contain
+                 transition-transform
+                 duration-500
+                 ease-in-out
+                 hover:scale-110"
+          alt="Engage">
 
-            <!-- Points -->
-            <div class="mt-7 space-y-5">
-
-                <div class="flex items-start gap-3">
-                    <span class="text-purple-600 text-xl">✓</span>
-
-                    <p class="text-gray-700 text-base">
-                        Save all your ideas as inspiration strikes
-                    </p>
-                </div>
-
-
-                <div class="flex items-start gap-3">
-                    <span class="text-purple-600 text-xl">✓</span>
-
-                    <p class="text-gray-700 text-base">
-                        Learn exactly what content works best and why
-                    </p>
-                </div>
+      </div>
 
 
-                <div class="flex items-start gap-3">
-                    <span class="text-purple-600 text-xl">✓</span>
+      <!-- TEXT -->
 
-                    <p class="text-gray-700 text-base">
-                        Create once, crosspost everywhere
-                    </p>
-                </div>
+      <div class="bg-white p-6 sm:p-8 min-h-[290px]">
 
-            </div>
+        <p class="text-green-600 font-semibold">
+          ENGAGE
+        </p>
 
-        </div>
+        <h2
+          class="text-2xl sm:text-3xl
+                 font-bold
+                 text-gray-900
+                 mt-3">
 
+          Reply to comments in a flash
 
-        <!-- RIGHT SIDE -->
-        <div class="bg-[#e4d5ff] rounded-3xl p-10">
+        </h2>
 
-            <!-- Small Heading -->
-            <p class="text-purple-800 font-semibold tracking-wider text-base">
-                THE BUFFER CREATOR COMMUNITY
-            </p>
+        <p
+          class="text-gray-600
+                 mt-4
+                 text-base sm:text-lg md:text-xl">
 
+          Engage with your audience across all your channels at 10x speed.
+          Buffer will help you triage and respond to comments from one simple dashboard.
 
-            <!-- Creator Cards -->
-            <div class="grid grid-cols-3 gap-5 mt-5">
+        </p>
 
+        <a
+          href="#"
+          class="inline-block
+                 mt-6
+                 text-gray-700
+                 text-base sm:text-lg
+                 underline
+                 hover:text-gray-900
+                 transition">
 
-                <!-- Creator 1 -->
-                <div class="bg-[#f5efff] rounded-xl p-5 text-center">
+          Learn more →
 
-                    <div class="flex justify-center">
-                        <div class="w-20 h-20 rounded-full overflow-hidden">
-                            <img src="public/rita-iglesias.webp"
-                                 class="w-full h-full object-cover">
-                        </div>
-                    </div>
+        </a>
 
-                    <h3 class="text-lg font-semibold text-gray-900 mt-4">
-                        @rita_codes
-                    </h3>
-
-                    <p class="text-sm text-gray-700 mt-2">
-                        34.9K FOLLOWERS ON X
-                    </p>
-
-                </div>
-
-
-                <!-- Creator 2 -->
-                <div class="bg-[#f5efff] rounded-xl p-5 text-center">
-
-                    <div class="flex justify-center">
-                        <div class="w-20 h-20 rounded-full overflow-hidden">
-                            <img src="public/paul-de-la-baume.webp"
-                                 class="w-full h-full object-cover">
-                        </div>
-                    </div>
-
-                    <h3 class="text-lg font-semibold text-gray-900 mt-4">
-                        @Pauldelaume
-                    </h3>
-
-                    <p class="text-sm text-gray-700 mt-2">
-                        21K FOLLOWERS ON LINKEDIN
-                    </p>
-
-                </div>
-
-
-                <!-- Creator 3 -->
-                <div class="bg-[#f5efff] rounded-xl p-5 text-center">
-
-                    <div class="flex justify-center">
-                        <div class="w-20 h-20 rounded-full overflow-hidden">
-                            <img src="public/yola-bastos.webp"
-                                 class="w-full h-full object-cover">
-                        </div>
-                    </div>
-
-                    <h3 class="text-lg font-semibold text-gray-900 mt-4">
-                        @yola_bastos
-                    </h3>
-
-                    <p class="text-sm text-gray-700 mt-2">
-                        14.6K FOLLOWERS ON INSTAGRAM
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
+      </div>
 
     </div>
 
-</div>
-<!-- Customer Support Section -->
-<div class="w-full px-10 py-20">
 
-    <div class="max-w-7xl mx-auto grid grid-cols-2 gap-16 items-center">
+    <!-- ================= CARD 4 ================= -->
 
-        <!-- LEFT SIDE -->
-        <div>
+    <div
+      class="bg-white
+             rounded-3xl
+             overflow-hidden
+             shadow-sm
+             transition-all duration-500
+             ease-in-out
+             hover:-translate-y-3
+             hover:shadow-2xl">
 
-            <!-- Small Heading -->
-            <p class="text-gray-700 font-semibold tracking-wider text-sm">
-                CUSTOMER SUPPORT
-            </p>
+      <!-- IMAGE -->
 
+      <div
+        class="bg-sky-300
+               h-[300px] sm:h-[400px] md:h-[500px]
+               rounded-2xl
+               flex items-center justify-center
+               p-6
+               overflow-hidden">
 
-            <!-- Main Heading -->
-            <h2 class="text-5xl font-normal text-gray-900 mt-6 leading-tight">
-                Human support, worldwide
-            </h2>
+        <img
+          src="public/buffer-api.webp"
+          class="w-full h-full
+                 object-contain
+                 transition-transform
+                 duration-500
+                 ease-in-out
+                 hover:scale-110"
+          alt="Collaborate">
 
-
-            <!-- Description -->
-            <p class="text-gray-700 text-xl mt-5 leading-relaxed max-w-2xl">
-                Our global Customer Advocacy team is spread across time zones
-                to make sure help is always nearby. Whether you have a quick
-                question, need technical support, or just want to connect,
-                we’re here for you — no bots, just real people who care.
-            </p>
-
-
-            <!-- Buttons -->
-            <div class="flex items-center gap-3 mt-7">
-
-                <!-- Visit Help Center -->
-                <a href="#"
-                   class="px-6 py-3 rounded-full
-                          bg-[#d9f7c8] border border-gray-700
-                          text-gray-800
-                          transition-all duration-300
-                          hover:-translate-y-1 hover:shadow-md">
-                    Visit the Help Center
-                </a>
+      </div>
 
 
-                <!-- Join Discord -->
-                <a href="#"
-                   class="px-6 py-3 rounded-full
-                          bg-white border border-gray-700
-                          text-gray-800
-                          transition-all duration-300
-                          hover:bg-gray-100
-                          hover:-translate-y-1 hover:shadow-md">
-                    Join Discord
-                </a>
+      <!-- TEXT -->
 
-            </div>
+      <div class="bg-white p-6 sm:p-8 min-h-[270px]">
 
+        <p class="text-pink-600 font-semibold">
+          COLLABORATE
+        </p>
 
-            <!-- Bottom Text -->
-            <p class="text-gray-700 text-lg mt-10 leading-relaxed">
-                We prioritize customer connection as a company and you could
-                end up speaking with a teammate in any role at Buffer,
-                from Marketers to Engineers.
-            </p>
+        <h2
+          class="text-2xl sm:text-3xl
+                 font-bold
+                 text-gray-900
+                 mt-3">
 
+          Answers, not just analytics
 
-            <!-- Learn More -->
-            <a href="#"
-               class="inline-block mt-5
-                      text-gray-700 text-lg underline
-                      transition-all duration-300
-                      hover:text-black">
-                Learn more about our global team →
-            </a>
+        </h2>
 
-        </div>
+        <p
+          class="text-gray-600
+                 mt-4
+                 text-base sm:text-lg md:text-xl">
 
+          Whether it's basic analytics or in-depth reporting.
+          Buffer will help you learn what works and how to improve.
 
-        <!-- RIGHT SIDE IMAGE -->
-       <div class="overflow-hidden rounded-3xl">
+        </p>
 
-    <img src="public/customer-support-team.webp"
-         class="w-full h-[480px] object-cover">
+        <a
+          href="#"
+          class="inline-block
+                 mt-6
+                 text-gray-700
+                 text-base sm:text-lg
+                 underline
+                 hover:text-gray-900
+                 transition">
 
-</div>
+          Learn more →
+
+        </a>
+
+      </div>
 
     </div>
 
-</div>
-<!-- Resources Section -->
-<div class="w-full px-10 py-16">
-
-    <!-- Heading -->
-    <div class="grid grid-cols-2 gap-10 mb-12">
-
-        <!-- Left Heading -->
-        <div>
-            <p class="text-gray-700 font-semibold tracking-wider text-sm">
-                RESOURCES
-            </p>
-
-            <h2 class="text-5xl font-normal text-gray-900 mt-3">
-                Fuel your social media success
-            </h2>
-        </div>
-
-        <!-- Right Text -->
-        <div class="flex items-center">
-            <p class="text-gray-700 text-xl">
-                Everything you need to level up your social strategy—in one place.
-            </p>
-        </div>
-
-    </div>
+  </div>
 
 
-   <!-- CARDS -->
+  <!-- ================= AND SO MUCH MORE ================= -->
 
-    <div class="grid grid-cols-3 gap-5">
+  <div class="w-full text-center py-14 sm:py-16">
+
+    <h2
+      class="text-3xl sm:text-4xl
+             font-semibold
+             text-gray-900">
+
+      …and so much more!
+
+    </h2>
+
+  </div>
 
 
-      <!-- LEFT -->
+  <!-- ================= MORE FEATURES ================= -->
 
-      <div class="space-y-5">
+  <div class="w-full pb-14 sm:pb-18">
 
-        <!-- CARD 1 -->
+    <div
+      class="grid
+             grid-cols-1
+             sm:grid-cols-2
+             lg:grid-cols-4
+             gap-5">
 
-        <div class="border rounded-3xl p-2
-                    hover:-translate-y-1 hover:shadow-md
-                    transition-all duration-300">
 
-          <div class="bg-[#d4c2ff] rounded-2xl h-[350px] p-6 relative overflow-hidden">
+      <!-- ================= COLLABORATE ================= -->
 
-            <!-- ARROW -->
-            <i class="fa-solid fa-arrow-right absolute top-6 right-6 text-xl
-                      hover:translate-x-1 transition-transform duration-200"></i>
+      <div
+        class="text-left
+               border p-2 sm:p-3
+               border-gray-200
+               rounded-3xl
+               overflow-hidden
+               transition-all duration-500
+               hover:-translate-y-2
+               hover:shadow-lg">
 
-            <h2 class="text-3xl text-[#263633]">
-              Free Marketing Tools
-            </h2>
+        <div
+          class="bg-[#f9b3f5]
+                 h-[220px] sm:h-[250px]
+                 rounded-2xl
+                 w-full
+                 flex items-center justify-center
+                 overflow-hidden">
 
-            <p class="mt-4 text-sm">
-              A collection of free tools to make your
-              social media marketing easier and more effective.
-            </p>
-
-            <img
-              src="public/glossary.png"
-              class="absolute bottom-0 left-5 w-[70%]
-                     hover:scale-105 transition-transform duration-300"
-            >
-
-          </div>
+          <img
+            src="public/collaborate.webp"
+            class="w-full h-full
+                   object-contain
+                   transition-transform duration-500
+                   hover:scale-105"
+            alt="Collaborate">
 
         </div>
 
 
-        <!-- CARD 2 -->
+        <div class="p-4 sm:p-5">
 
-        <div class="border rounded-3xl p-2
-                    hover:-translate-y-1 hover:shadow-md
-                    transition-all duration-300">
+          <h3 class="text-lg font-medium text-gray-900">
+            Collaborate
+          </h3>
 
-          <div class="bg-[#ffb2a8] rounded-2xl h-[375px] p-6 relative overflow-hidden">
+          <p class="text-gray-600 mt-3 text-base">
+            Manage, edit, and approve social media posts
+            from your team.
+          </p>
 
-            <!-- ARROW -->
-            <i class="fa-solid fa-arrow-right absolute top-6 right-6 text-xl
-                      hover:translate-x-1 transition-transform duration-200"></i>
+          <a
+            href="#"
+            class="inline-block mt-5
+                   text-gray-700 underline
+                   hover:text-black transition">
 
-            <h2 class="text-2xl text-[#263633] text-md">
-              Social Media Marketing 
-              101
-            </h2>
+            Learn more →
 
-            <p class="mt-4 text-lg">
-
-               Your go-to guide for mastering the basics
-                of social media and beyond.
-            </p>
-
-            <img
-              src="public/social.png"
-              class="absolute bottom-0 left-5 w-[85%] mt-20 rotate-[-5deg]
-                     hover:scale-105 transition-transform duration-300"
-            >
-
-          </div>
+          </a>
 
         </div>
 
       </div>
 
 
-      <!-- RIGHT -->
+      <!-- ================= MOBILE APP ================= -->
 
-      <div class="col-span-2 grid grid-cols-2 gap-5">
+      <div
+        class="text-left
+               border p-2
+               border-gray-200
+               rounded-3xl
+               overflow-hidden
+               transition-all duration-500
+               hover:-translate-y-2
+               hover:shadow-lg">
 
-        <!-- CARD 3 -->
+        <div
+          class="bg-[#cd73f0]
+                 h-[220px] sm:h-[250px]
+                 w-full
+                 rounded-2xl
+                 flex items-center justify-center
+                 overflow-hidden">
 
-        <div class="col-span-2 border rounded-3xl p-2
-                    hover:-translate-y-1 hover:shadow-md
-                    transition-all duration-300">
-
-          <div class="bg-[#9feae2] rounded-2xl h-[270px] p-6 relative overflow-hidden">
-
-            <div class="w-1/2">
-
-              <h2 class="text-3xl text-[#263633]">
-                Social Media Glossary
-              </h2>
-
-              <!-- ARROW -->
-              <i class="fa-solid fa-arrow-right absolute top-5 right-6 text-xl
-                        hover:translate-x-1 transition-transform duration-200"></i>
-
-              <p class="mt-4 text-lg">
-                A glossary of the most popular terms to
-                help you make sense of all the social media lingo.
-              </p>
-
-            </div>
-
-            <img
-              src="public/marketing.png"
-              class="absolute right-0 bottom-0 w-1/2 rotate-3
-                     hover:scale-105 transition-transform duration-300"
-            >
-
-          </div>
+          <img
+            src="public/shared.avif"
+            class="w-full h-full
+                   object-contain
+                   transition-transform duration-500
+                   hover:scale-105"
+            alt="Mobile App">
 
         </div>
 
 
-        <!-- CARD 4 -->
+        <div class="p-4 sm:p-5">
 
-        <div class="border rounded-3xl p-2
-                    hover:-translate-y-1 hover:shadow-md
-                    transition-all duration-300">
+          <h3 class="text-lg font-medium text-gray-900">
+            Mobile app
+          </h3>
 
-          <div class="bg-[#f3bdff] rounded-2xl h-[460px] p-6 relative overflow-hidden">
+          <p class="text-gray-600 mt-3 text-base">
+            Manage your social media accounts
+            from anywhere.
+          </p>
 
-            <!-- IMAGE -->
-            <img
-              src="public/post.png"
-              class="w-full hover:scale-105 transition-transform duration-300"
-            >
+          <a
+            href="#"
+            class="inline-block mt-5
+                   text-gray-700 underline
+                   hover:text-black transition">
 
-            <!-- TEXT -->
-            <div class="absolute bottom-6 left-6 right-6">
+            Learn more →
 
-              <!-- ARROW -->
-              <i class="fa-solid fa-arrow-right absolute top-6 right-6 text-xl
-                        hover:translate-x-1 transition-transform duration-200"></i>
+          </a>
 
-              <h2 class="text-3xl text-[#263633]">
-               Best Time To Post
-              </h2>
+        </div>
 
-              <p class="mt-4 text-lg">
-                Discover the best times to post on social media
-                to maximize your engagement.
-              </p>
+      </div>
 
-            </div>
 
-          </div>
+      <!-- ================= START PAGE ================= -->
+
+      <div
+        class="text-left
+               border p-2
+               border-gray-200
+               rounded-3xl
+               overflow-hidden
+               transition-all duration-500
+               hover:-translate-y-2
+               hover:shadow-lg">
+
+        <div
+          class="bg-[#edc256]
+                 h-[220px] sm:h-[250px]
+                 rounded-2xl
+                 w-full
+                 flex items-center justify-center
+                 overflow-hidden">
+
+          <img
+            src="public/approval.avif"
+            class="w-full h-full
+                   object-contain
+                   transition-transform duration-500
+                   hover:scale-105"
+            alt="Start Page">
 
         </div>
 
 
-        <!-- CARD 5 -->
+        <div class="p-4 sm:p-5">
 
-        <div class="border rounded-3xl p-2
-                    hover:-translate-y-1 hover:shadow-md
-                    transition-all duration-300">
+          <h3 class="text-lg font-medium text-gray-900">
+            Start page
+          </h3>
 
-          <div class="bg-[#ffd88a] rounded-2xl h-[460px] p-6 relative overflow-hidden">
+          <p class="text-gray-600 mt-3 text-base">
+            Turn your social bio into a powerful,
+            personalized hub.
+          </p>
 
-            <!-- ARROW -->
-            <i class="fa-solid fa-arrow-right absolute top-6 right-6 text-xl
-                      hover:translate-x-1 transition-transform duration-200"></i>
+          <a
+            href="#"
+            class="inline-block mt-5
+                   text-gray-700 underline
+                   hover:text-black transition">
 
-            <!-- TEXT -->
-            <div class="relative z-10">
+            Learn more →
 
-              <h2 class="text-3xl text-[#263633]">
-               Social Media Resources
-              </h2>
+          </a>
 
-              <p class="mt-4 text-sm">
-              A collection of articles and interviews packed wit tips,stories
-              and insights to level up your social media marketing  game.
-              </p>
+        </div>
+
+      </div>
+
+
+      <!-- ================= AI ASSISTANT ================= -->
+
+      <div
+        class="text-left
+               border p-2
+               border-gray-200
+               rounded-3xl
+               overflow-hidden
+               transition-all duration-500
+               hover:-translate-y-2
+               hover:shadow-lg">
+
+        <div
+          class="bg-[#4ed9ee]
+                 rounded-2xl
+                 h-[220px] sm:h-[250px]
+                 w-full
+                 flex items-center justify-center
+                 overflow-hidden">
+
+          <img
+            src="public/content.avif"
+            class="w-full h-full
+                   object-contain
+                   transition-transform duration-500
+                   hover:scale-105"
+            alt="AI Assistant">
+
+        </div>
+
+
+        <div class="p-4 sm:p-5">
+
+          <h3 class="text-lg font-medium text-gray-900">
+            AI assistant
+          </h3>
+
+          <p class="text-gray-600 mt-3 text-base">
+            Brainstorm ideas, rewrite content, and craft
+            platform-specific posts.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block mt-5
+                   text-gray-700 underline
+                   hover:text-black transition">
+
+            Learn more →
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- ================= CONNECT ACCOUNTS ================= -->
+
+<div class="w-full mx-0 sm:mx-4 lg:mx-6
+            px-4 sm:px-6 lg:px-10
+            py-8 sm:py-10
+            bg-gray-200 rounded-2xl">
+
+  <div class="max-w-7xl mx-auto
+              flex flex-col lg:flex-row
+              items-center lg:justify-between
+              gap-8">
+
+    <!-- LEFT TEXT -->
+
+    <h2 class="text-xl sm:text-2xl
+               font-semibold
+               text-gray-900
+               text-center lg:text-left">
+
+      Connect your favorite accounts
+
+    </h2>
+
+
+    <!-- RIGHT ICONS -->
+
+    <div class="flex flex-wrap
+                items-center
+                justify-center
+                gap-5 sm:gap-7">
+
+
+      <!-- LinkedIn -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-linkedin-in
+                  text-3xl sm:text-4xl
+                  text-blue-600
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          LinkedIn
+        </span>
+
+      </div>
+
+
+      <!-- Threads -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-threads
+                  text-3xl sm:text-4xl
+                  text-black
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Threads
+        </span>
+
+      </div>
+
+
+      <!-- Pinterest -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-pinterest
+                  text-3xl sm:text-4xl
+                  text-red-600
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Pinterest
+        </span>
+
+      </div>
+
+
+      <!-- Bluesky -->
+
+      <div class="relative group text-center">
+
+        <span class="text-3xl sm:text-4xl
+                     cursor-pointer
+                     transition-transform duration-300
+                     group-hover:scale-125">
+          🦋
+        </span>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Bluesky
+        </span>
+
+      </div>
+
+
+      <!-- YouTube -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-youtube
+                  text-3xl sm:text-4xl
+                  text-red-600
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          YouTube
+        </span>
+
+      </div>
+
+
+      <!-- X -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-x-twitter
+                  text-3xl sm:text-4xl
+                  text-black
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          X
+        </span>
+
+      </div>
+
+
+      <!-- Instagram -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-instagram
+                  text-3xl sm:text-4xl
+                  text-pink-500
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Instagram
+        </span>
+
+      </div>
+
+
+      <!-- TikTok -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-tiktok
+                  text-3xl sm:text-4xl
+                  text-black
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          TikTok
+        </span>
+
+      </div>
+
+
+      <!-- Facebook -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-facebook
+                  text-3xl sm:text-4xl
+                  text-blue-600
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Facebook
+        </span>
+
+      </div>
+
+
+      <!-- Google -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-google
+                  text-3xl sm:text-4xl
+                  text-blue-500
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Google
+        </span>
+
+      </div>
+
+
+      <!-- Dropbox -->
+
+      <div class="relative group text-center">
+
+        <i class="fa-brands fa-dropbox
+                  text-3xl sm:text-4xl
+                  text-blue-600
+                  transition-transform duration-300
+                  group-hover:scale-125">
+        </i>
+
+        <span class="hidden sm:block
+                     absolute top-10 left-1/2
+                     -translate-x-1/2
+                     text-sm text-gray-700
+                     whitespace-nowrap
+                     opacity-0
+                     group-hover:opacity-100
+                     transition duration-300">
+          Dropbox
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= AUDIENCE SECTION ================= -->
+
+<div class="w-full
+            px-4 sm:px-6 lg:px-10
+            py-10 sm:py-12">
+
+
+  <!-- AUDIENCE BUTTONS -->
+
+  <div class="flex flex-wrap
+              items-center
+              justify-center
+              gap-3
+              mb-8 sm:mb-10">
+
+    <button
+      class="px-5 sm:px-6
+             py-2.5
+             rounded-full
+             border border-gray-700
+             bg-[#e9ddff]
+             text-gray-900
+             text-sm sm:text-base
+             transition-all duration-300
+             hover:-translate-y-1
+             hover:shadow-md">
+
+      Creators
+
+    </button>
+
+
+    <button
+      class="px-5 sm:px-6
+             py-2.5
+             rounded-full
+             border border-gray-700
+             bg-white
+             text-gray-900
+             text-sm sm:text-base
+             transition-all duration-300
+             hover:bg-gray-100
+             hover:-translate-y-1
+             hover:shadow-md">
+
+      Small businesses
+
+    </button>
+
+
+    <button
+      class="px-5 sm:px-6
+             py-2.5
+             rounded-full
+             border border-gray-700
+             bg-white
+             text-gray-900
+             text-sm sm:text-base
+             transition-all duration-300
+             hover:bg-gray-100
+             hover:-translate-y-1
+             hover:shadow-md">
+
+      Agencies
+
+    </button>
+
+  </div>
+
+
+  <!-- MAIN -->
+
+  <div class="max-w-7xl mx-auto
+              grid grid-cols-1 lg:grid-cols-2
+              gap-10 lg:gap-12
+              items-center">
+
+
+    <!-- LEFT -->
+
+    <div class="px-0 sm:px-4 lg:px-8">
+
+      <h2
+        class="text-3xl sm:text-4xl
+               font-semibold
+               leading-tight
+               text-gray-900">
+
+        Grow from zero →
+        one → one million
+
+      </h2>
+
+
+      <p
+        class="text-gray-600
+               text-base sm:text-lg
+               mt-6
+               leading-relaxed">
+
+        Whether you’re just getting started on your creator journey
+        or scaling your audience to new heights, Buffer will get your
+        content in front of more people.
+
+      </p>
+
+
+      <!-- POINTS -->
+
+      <div class="mt-7 space-y-5">
+
+        <div class="flex items-start gap-3">
+
+          <span class="text-purple-600 text-xl">
+            ✓
+          </span>
+
+          <p class="text-gray-700 text-base">
+            Save all your ideas as inspiration strikes
+          </p>
+
+        </div>
+
+
+        <div class="flex items-start gap-3">
+
+          <span class="text-purple-600 text-xl">
+            ✓
+          </span>
+
+          <p class="text-gray-700 text-base">
+            Learn exactly what content works best and why
+          </p>
+
+        </div>
+
+
+        <div class="flex items-start gap-3">
+
+          <span class="text-purple-600 text-xl">
+            ✓
+          </span>
+
+          <p class="text-gray-700 text-base">
+            Create once, crosspost everywhere
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <div
+      class="bg-[#e4d5ff]
+             rounded-3xl
+             p-5 sm:p-8 lg:p-10">
+
+      <p
+        class="text-purple-800
+               font-semibold
+               tracking-wider
+               text-sm sm:text-base">
+
+        THE BUFFER CREATOR COMMUNITY
+
+      </p>
+
+
+      <!-- CREATOR CARDS -->
+
+      <div
+        class="grid grid-cols-1
+               sm:grid-cols-3
+               gap-4 sm:gap-5
+               mt-5">
+
+
+        <!-- CREATOR 1 -->
+
+        <div
+          class="bg-[#f5efff]
+                 rounded-xl
+                 p-5
+                 text-center">
+
+          <div class="flex justify-center">
+
+            <div class="w-20 h-20
+                        rounded-full
+                        overflow-hidden">
+
+              <img
+                src="public/rita-iglesias.webp"
+                class="w-full h-full object-cover"
+                alt="Rita">
 
             </div>
 
-            <!-- IMAGE -->
-            <img
-              src="public/media.png"
-              class="absolute bottom-0 left-0 w-full 
-                     hover:scale-105 transition-transform duration-300"
-            >
+          </div>
+
+
+          <h3
+            class="text-lg
+                   font-semibold
+                   text-gray-900
+                   mt-4">
+
+            @rita_codes
+
+          </h3>
+
+
+          <p class="text-sm text-gray-700 mt-2">
+            34.9K FOLLOWERS ON X
+          </p>
+
+        </div>
+
+
+        <!-- CREATOR 2 -->
+
+        <div
+          class="bg-[#f5efff]
+                 rounded-xl
+                 p-5
+                 text-center">
+
+          <div class="flex justify-center">
+
+            <div class="w-20 h-20
+                        rounded-full
+                        overflow-hidden">
+
+              <img
+                src="public/paul-de-la-baume.webp"
+                class="w-full h-full object-cover"
+                alt="Paul">
+
+            </div>
 
           </div>
+
+
+          <h3
+            class="text-lg
+                   font-semibold
+                   text-gray-900
+                   mt-4">
+
+            @Pauldelaume
+
+          </h3>
+
+
+          <p class="text-sm text-gray-700 mt-2">
+            21K FOLLOWERS ON LINKEDIN
+          </p>
+
+        </div>
+
+
+        <!-- CREATOR 3 -->
+
+        <div
+          class="bg-[#f5efff]
+                 rounded-xl
+                 p-5
+                 text-center">
+
+          <div class="flex justify-center">
+
+            <div class="w-20 h-20
+                        rounded-full
+                        overflow-hidden">
+
+              <img
+                src="public/yola-bastos.webp"
+                class="w-full h-full object-cover"
+                alt="Yola">
+
+            </div>
+
+          </div>
+
+
+          <h3
+            class="text-lg
+                   font-semibold
+                   text-gray-900
+                   mt-4">
+
+            @yola_bastos
+
+          </h3>
+
+
+          <p class="text-sm text-gray-700 mt-2">
+            14.6K FOLLOWERS ON INSTAGRAM
+          </p>
 
         </div>
 
@@ -1244,449 +1745,1265 @@
 
 </div>
 
-<!-- Main Hero Dashboard Section -->
-<main class="w-full max-w-7xl mx-auto px-4 py-12 md:py-20 flex-grow">
-
-    <!-- About Header Layout -->
-    <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-18">
-
-        <!-- About Content -->
-        <div class="max-w-1xl">
-
-            <span class="text-base uppercase tracking-widest font-semibold
-                         text-gray-400 block mb-3">
-                About Us
-            </span>
-
-            <h1 class="text-4xl md:text-5xl font-normal
-                       text-gray-900 tracking-tight mb-6">
-                We are an open company
-            </h1>
-
-            <p class="text-gray-600 text-base md:text-lg
-                      leading-relaxed">
-                Since 2013, we've shared Buffer's finances, team salaries,
-                and other key metrics openly. Our <br/>
-                 commitment to transparency
-                is rooted in our belief that it fosters trust, keeps us <br/>
-                accountable, and helps drive positive change within our industry.
-            </p>
-
-        </div>
 
 
-        <!-- Open Dashboard Button -->
-        <div class="mt-8 md:mt-4">
+<!-- ================= CUSTOMER SUPPORT ================= -->
 
-            <a href="#"
-               class="inline-flex items-center justify-center
-                      gap-3
-                      border border-gray-900
-                      text-gray-900
-                      rounded-full
-                      px-8 py-4
-                      min-w-[200px]
-                      font-medium
-                      bg-white
-                      shadow-sm
-                      hover:bg-gray-900
-                      hover:text-white
-                      hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300 ease-in-out">
+<div class="w-full
+            px-4 sm:px-6 lg:px-10
+            py-14 sm:py-20">
 
-                <span>Open dashboard</span>
-
-                <svg class="w-4 h-4 transition-transform duration-300
-                            group-hover:translate-x-1"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     viewBox="0 0 24 24">
-
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3">
-                    </path>
-
-                </svg>
-
-            </a>
-
-        </div>
-
-    </div>
-
-<!-- Main Section -->
-
-    <!-- Metrics Grid Cards -->
-    <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" >
+  <div
+    class="max-w-7xl mx-auto
+           grid grid-cols-1 lg:grid-cols-2
+           gap-10 lg:gap-16
+           items-center">
 
 
-        <!-- Card 1 -->
-        <div class="w-full  bg-white
-                    border border-gray-100
-                    rounded-2xl
-                    p-7
-                    flex flex-col justify-between
-                    min-h-[145px]
-                    shadow-sm
-                    hover:shadow-lg
-                    hover:-translate-y-1
-                    hover:bg-white
-                    transition-all duration-300 ease-in-out
-                    cursor-pointer">
+    <!-- LEFT -->
 
-            <div>
-                <h3 class="text-base font-bold text-gray-900">
-                    MAU
-                </h3>
+    <div>
 
-                <p class="text-base text-gray-500 mt-1">
-                    Monthly active users
-                </p>
-            </div>
+      <p
+        class="text-gray-700
+               font-semibold
+               tracking-wider
+               text-sm">
 
-            <div class="text-3xl font-bold text-gray-900 mt-4 tracking-tight">
-                241,384
-            </div>
+        CUSTOMER SUPPORT
 
-        </div>
+      </p>
 
 
-        <!-- Card 2 -->
-        <div class="w-full bg-white
-                    border border-gray-100
-                    rounded-2xl
-                    p-7
-                    flex flex-col justify-between
-                    min-h-[145px]
-                    shadow-sm
-                    hover:shadow-lg
-                    hover:-translate-y-1
-                    hover:bg-white
-                    transition-all duration-300 ease-in-out
-                    cursor-pointer">
+      <h2
+        class="text-4xl sm:text-5xl
+               font-normal
+               text-gray-900
+               mt-6
+               leading-tight">
 
-            <div>
-                <h3 class="text-base font-bold text-gray-900">
-                    Total customers
-                </h3>
+        Human support, worldwide
 
-                <p class="text-base text-gray-500 mt-1">
-                    Total customers
-                </p>
-            </div>
-
-            <div class="text-3xl font-bold text-gray-900 mt-4 tracking-tight">
-                79,388
-            </div>
-
-        </div>
+      </h2>
 
 
-        <!-- Card 3 -->
-        <div class="w-full bg-white
-                    border border-gray-100
-                    rounded-2xl
-                    p-7
-                    flex flex-col justify-between
-                    min-h-[145px]
-                    shadow-sm
-                    hover:shadow-lg
-                    hover:-translate-y-1
-                    hover:bg-white
-                    transition-all duration-300 ease-in-out
-                    cursor-pointer">
+      <p
+        class="text-gray-700
+               text-base sm:text-xl
+               mt-5
+               leading-relaxed
+               max-w-2xl">
 
-            <div>
-                <h3 class="text-base font-bold text-gray-900">
-                    Teammates
-                </h3>
+        Our global Customer Advocacy team is spread across time zones
+        to make sure help is always nearby. Whether you have a quick
+        question, need technical support, or just want to connect,
+        we’re here for you — no bots, just real people who care.
 
-                <p class="text-base text-gray-500 mt-1">
-                    Across 15 countries
-                </p>
-            </div>
-
-            <div class="text-3xl font-bold text-gray-900 mt-4 tracking-tight">
-                73
-            </div>
-
-        </div>
+      </p>
 
 
-        <!-- Card 4 -->
-        <div class="w-full bg-white
-                    border border-gray-100
-                    rounded-2xl
-                    p-7
-                    flex flex-col justify-between
-                    min-h-[145px]
-                    shadow-sm
-                    hover:shadow-lg
-                    hover:-translate-y-1
-                    hover:bg-white
-                    transition-all duration-300 ease-in-out
-                    cursor-pointer">
+      <!-- BUTTONS -->
 
-            <div>
-                <h3 class="text-base font-bold text-gray-900">
-                    ARR
-                </h3>
+      <div
+        class="flex flex-col sm:flex-row
+               items-stretch sm:items-center
+               gap-3
+               mt-7">
 
-                <p class="text-base text-gray-500 mt-1">
-                    Annual recurring revenue
-                </p>
-            </div>
+        <a
+          href="#"
+          class="px-6 py-3
+                 rounded-full
+                 bg-[#d9f7c8]
+                 border border-gray-700
+                 text-gray-800
+                 text-center
+                 transition-all duration-300
+                 hover:-translate-y-1
+                 hover:shadow-md">
 
-            <div class="text-3xl font-bold text-gray-900 mt-4 tracking-tight">
-                $26.0M
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-</main>
- <!-- Green CTA Section -->
-<section class="w-full
-                bg-[#a9e6a9]
-                rounded-2xl
-                p-12 md:p-18
-                text-center
-                border-2 border-[#8fd18f]
-                ring-2 ring-gray-200
-                ring-offset-8 ring-offset-white
-                shadow-[0_8px_30px_rgba(0,0,0,0.06)]
-                relative overflow-hidden">
-
-    <div class="max-w-5xl mx-auto relative z-10 flex flex-col items-center">
-
-        <!-- Heading -->
-        <h1 class="text-4xl md:text-[3.5rem]
-                   font-normal
-                   text-[#1f2937]
-                   tracking-tight
-                   leading-[1.1]
-                   mb-7
-                   max-w-4xl">
-
-            Grow your social presence with confidence
-
-        </h1>
-
-
-        <!-- Get Started Button -->
-        <a href="#"
-           class="inline-flex items-center
-                  gap-3
-                  bg-[#212b36]
-                  text-white
-                  text-base
-                  font-medium
-                  px-9 py-4
-                  rounded-full
-                  min-w-[220px]
-                  justify-center
-                  shadow-md
-                  hover:bg-black
-                  hover:shadow-xl
-                  hover:-translate-y-1
-                  transition-all duration-300
-                  group
-                  mb-6">
-
-            <span>Get started for free</span>
-
-            <svg class="w-5 h-5
-                        transition-transform duration-300
-                        group-hover:translate-x-1"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2.5"
-                 viewBox="0 0 24 24">
-
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3">
-                </path>
-
-            </svg>
+          Visit the Help Center
 
         </a>
 
 
-        <!-- Microcopy -->
-        <p class="text-sm font-medium text-gray-700/90">
-            No credit card needed. Free forever.
-        </p>
+        <a
+          href="#"
+          class="px-6 py-3
+                 rounded-full
+                 bg-white
+                 border border-gray-700
+                 text-gray-800
+                 text-center
+                 transition-all duration-300
+                 hover:bg-gray-100
+                 hover:-translate-y-1
+                 hover:shadow-md">
+
+          Join Discord
+
+        </a>
+
+      </div>
+
+
+      <p
+        class="text-gray-700
+               text-base sm:text-lg
+               mt-10
+               leading-relaxed">
+
+        We prioritize customer connection as a company and you could
+        end up speaking with a teammate in any role at Buffer,
+        from Marketers to Engineers.
+
+      </p>
+
+
+      <a
+        href="#"
+        class="inline-block
+               mt-5
+               text-gray-700
+               text-base sm:text-lg
+               underline
+               transition-all duration-300
+               hover:text-black">
+
+        Learn more about our global team →
+
+      </a>
 
     </div>
+
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="overflow-hidden rounded-3xl">
+
+      <img
+        src="public/customer-support-team.webp"
+        class="w-full
+               h-[300px] sm:h-[400px] lg:h-[480px]
+               object-cover"
+        alt="Customer Support Team">
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= RESOURCES ================= -->
+
+<div
+  class="w-full
+         px-4 sm:px-6 lg:px-10
+         py-12 sm:py-16">
+
+
+  <!-- HEADING -->
+
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2
+           gap-8 lg:gap-10
+           mb-10 sm:mb-12">
+
+
+    <!-- LEFT -->
+
+    <div>
+
+      <p
+        class="text-gray-700
+               font-semibold
+               tracking-wider
+               text-sm">
+
+        RESOURCES
+
+      </p>
+
+
+      <h2
+        class="text-4xl sm:text-5xl
+               font-normal
+               text-gray-900
+               mt-3">
+
+        Fuel your social media success
+
+      </h2>
+
+    </div>
+
+
+    <!-- RIGHT -->
+
+    <div class="flex items-center">
+
+      <p class="text-gray-700 text-base sm:text-xl">
+
+        Everything you need to level up your social strategy—in one place.
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- RESOURCE CARDS -->
+
+  <div
+    class="grid grid-cols-1 lg:grid-cols-3
+           gap-5">
+
+
+    <!-- LEFT COLUMN -->
+
+    <div class="space-y-5">
+
+
+      <!-- CARD 1 -->
+
+      <div
+        class="border rounded-3xl p-2
+               hover:-translate-y-1
+               hover:shadow-md
+               transition-all duration-300">
+
+        <div
+          class="bg-[#d4c2ff]
+                 rounded-2xl
+                 h-[300px] sm:h-[350px]
+                 p-5 sm:p-6
+                 relative
+                 overflow-hidden">
+
+          <i
+            class="fa-solid fa-arrow-right
+                   absolute top-6 right-6
+                   text-xl
+                   hover:translate-x-1
+                   transition-transform duration-200">
+          </i>
+
+
+          <h2
+            class="text-2xl sm:text-3xl
+                   text-[#263633]">
+
+            Free Marketing Tools
+
+          </h2>
+
+
+          <p class="mt-4 text-sm sm:text-base">
+
+            A collection of free tools to make your
+            social media marketing easier and more effective.
+
+          </p>
+
+
+          <img
+            src="public/glossary.png"
+            class="absolute bottom-0 left-5
+                   w-[70%]
+                   hover:scale-105
+                   transition-transform duration-300"
+            alt="Marketing Tools">
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+
+      <div
+        class="border rounded-3xl p-2
+               hover:-translate-y-1
+               hover:shadow-md
+               transition-all duration-300">
+
+        <div
+          class="bg-[#ffb2a8]
+                 rounded-2xl
+                 h-[320px] sm:h-[375px]
+                 p-5 sm:p-6
+                 relative
+                 overflow-hidden">
+
+          <i
+            class="fa-solid fa-arrow-right
+                   absolute top-6 right-6
+                   text-xl
+                   hover:translate-x-1
+                   transition-transform duration-200">
+          </i>
+
+
+          <h2
+            class="text-2xl
+                   text-[#263633]">
+
+            Social Media Marketing
+            101
+
+          </h2>
+
+
+          <p
+            class="mt-4
+                   text-base sm:text-lg">
+
+            Your go-to guide for mastering the basics
+            of social media and beyond.
+
+          </p>
+
+
+          <img
+            src="public/social.png"
+            class="absolute bottom-0 left-5
+                   w-[85%]
+                   rotate-[-5deg]
+                   hover:scale-105
+                   transition-transform duration-300"
+            alt="Social Media">
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+
+    <div
+      class="lg:col-span-2
+             grid grid-cols-1 sm:grid-cols-2
+             gap-5">
+
+
+      <!-- CARD 3 -->
+
+      <div
+        class="sm:col-span-2
+               border rounded-3xl p-2
+               hover:-translate-y-1
+               hover:shadow-md
+               transition-all duration-300">
+
+        <div
+          class="bg-[#9feae2]
+                 rounded-2xl
+                 h-[300px]
+                 p-5 sm:p-6
+                 relative
+                 overflow-hidden">
+
+          <div class="w-full sm:w-1/2">
+
+            <h2
+              class="text-2xl sm:text-3xl
+                     text-[#263633]">
+
+              Social Media Glossary
+
+            </h2>
+
+
+            <i
+              class="fa-solid fa-arrow-right
+                     absolute top-5 right-6
+                     text-xl
+                     hover:translate-x-1
+                     transition-transform duration-200">
+            </i>
+
+
+            <p
+              class="mt-4
+                     text-base sm:text-lg">
+
+              A glossary of the most popular terms to
+              help you make sense of all the social media lingo.
+
+            </p>
+
+          </div>
+
+
+          <img
+            src="public/marketing.png"
+            class="absolute right-0 bottom-0
+                   w-[55%] sm:w-1/2
+                   rotate-3
+                   hover:scale-105
+                   transition-transform duration-300"
+            alt="Marketing">
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 4 -->
+
+      <div
+        class="border rounded-3xl p-2
+               hover:-translate-y-1
+               hover:shadow-md
+               transition-all duration-300">
+
+        <div
+          class="bg-[#f3bdff]
+                 rounded-2xl
+                 h-[400px] sm:h-[460px]
+                 p-5 sm:p-6
+                 relative
+                 overflow-hidden">
+
+          <img
+            src="public/post.png"
+            class="w-full
+                   hover:scale-105
+                   transition-transform duration-300"
+            alt="Best Time To Post">
+
+
+          <div
+            class="absolute
+                   bottom-6
+                   left-6
+                   right-6">
+
+            <i
+              class="fa-solid fa-arrow-right
+                     absolute top-6 right-6
+                     text-xl
+                     hover:translate-x-1
+                     transition-transform duration-200">
+            </i>
+
+
+            <h2
+              class="text-2xl sm:text-3xl
+                     text-[#263633]">
+
+              Best Time To Post
+
+            </h2>
+
+
+            <p
+              class="mt-4
+                     text-base sm:text-lg">
+
+              Discover the best times to post on social media
+              to maximize your engagement.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 5 -->
+
+      <div
+        class="border rounded-3xl p-2
+               hover:-translate-y-1
+               hover:shadow-md
+               transition-all duration-300">
+
+        <div
+          class="bg-[#ffd88a]
+                 rounded-2xl
+                 h-[400px] sm:h-[460px]
+                 p-5 sm:p-6
+                 relative
+                 overflow-hidden">
+
+          <i
+            class="fa-solid fa-arrow-right
+                   absolute top-6 right-6
+                   text-xl
+                   hover:translate-x-1
+                   transition-transform duration-200">
+          </i>
+
+
+          <div class="relative z-10">
+
+            <h2
+              class="text-2xl sm:text-3xl
+                     text-[#263633]">
+
+              Social Media Resources
+
+            </h2>
+
+
+            <p
+              class="mt-4
+                     text-sm sm:text-base">
+
+              A collection of articles and interviews packed
+              wit tips, stories and insights to level up your
+              social media marketing game.
+
+            </p>
+
+          </div>
+
+
+          <img
+            src="public/media.png"
+            class="absolute bottom-0 left-0
+                   w-full
+                   hover:scale-105
+                   transition-transform duration-300"
+            alt="Social Media Resources">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= ABOUT US ================= -->
+
+<main
+  class="w-full
+         max-w-7xl
+         mx-auto
+         px-4 sm:px-6 lg:px-4
+         py-12 md:py-20">
+
+
+  <!-- ABOUT HEADER -->
+
+  <div
+    class="flex flex-col md:flex-row
+           md:items-start
+           md:justify-between
+           gap-8
+           mb-12 sm:mb-18">
+
+
+    <!-- ABOUT CONTENT -->
+
+    <div class="max-w-2xl">
+
+      <span
+        class="text-base
+               uppercase
+               tracking-widest
+               font-semibold
+               text-gray-400
+               block mb-3">
+
+        About Us
+
+      </span>
+
+
+      <h1
+        class="text-4xl md:text-5xl
+               font-normal
+               text-gray-900
+               tracking-tight
+               mb-6">
+
+        We are an open company
+
+      </h1>
+
+
+      <p
+        class="text-gray-600
+               text-base md:text-lg
+               leading-relaxed">
+
+        Since 2013, we've shared Buffer's finances,
+        team salaries, and other key metrics openly.
+        Our commitment to transparency is rooted in
+        our belief that it fosters trust, keeps us
+        accountable, and helps drive positive change
+        within our industry.
+
+      </p>
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <div class="mt-2 md:mt-4">
+
+      <a
+        href="#"
+        class="inline-flex
+               items-center
+               justify-center
+               gap-3
+               border border-gray-900
+               text-gray-900
+               rounded-full
+               px-8 py-4
+               w-full sm:w-auto
+               min-w-[200px]
+               font-medium
+               bg-white
+               shadow-sm
+               hover:bg-gray-900
+               hover:text-white
+               hover:shadow-lg
+               hover:-translate-y-1
+               transition-all duration-300">
+
+        <span>
+          Open dashboard
+        </span>
+
+
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24">
+
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M14 5l7 7m0 0l-7 7m7-7H3">
+          </path>
+
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= METRICS ================= -->
+
+  <div
+    class="w-full
+           grid grid-cols-1
+           sm:grid-cols-2
+           lg:grid-cols-4
+           gap-5">
+
+
+    <!-- CARD 1 -->
+
+    <div
+      class="w-full
+             bg-white
+             border border-gray-100
+             rounded-2xl
+             p-5 sm:p-7
+             flex flex-col
+             justify-between
+             min-h-[145px]
+             shadow-sm
+             hover:shadow-lg
+             hover:-translate-y-1
+             transition-all duration-300
+             cursor-pointer">
+
+      <div>
+
+        <h3 class="text-base font-bold text-gray-900">
+          MAU
+        </h3>
+
+        <p class="text-base text-gray-500 mt-1">
+          Monthly active users
+        </p>
+
+      </div>
+
+
+      <div
+        class="text-2xl sm:text-3xl
+               font-bold
+               text-gray-900
+               mt-4">
+
+        241,384
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+
+    <div
+      class="w-full
+             bg-white
+             border border-gray-100
+             rounded-2xl
+             p-5 sm:p-7
+             flex flex-col
+             justify-between
+             min-h-[145px]
+             shadow-sm
+             hover:shadow-lg
+             hover:-translate-y-1
+             transition-all duration-300
+             cursor-pointer">
+
+      <div>
+
+        <h3 class="text-base font-bold text-gray-900">
+          Total customers
+        </h3>
+
+        <p class="text-base text-gray-500 mt-1">
+          Total customers
+        </p>
+
+      </div>
+
+
+      <div
+        class="text-2xl sm:text-3xl
+               font-bold
+               text-gray-900
+               mt-4">
+
+        79,388
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+
+    <div
+      class="w-full
+             bg-white
+             border border-gray-100
+             rounded-2xl
+             p-5 sm:p-7
+             flex flex-col
+             justify-between
+             min-h-[145px]
+             shadow-sm
+             hover:shadow-lg
+             hover:-translate-y-1
+             transition-all duration-300
+             cursor-pointer">
+
+      <div>
+
+        <h3 class="text-base font-bold text-gray-900">
+          Teammates
+        </h3>
+
+        <p class="text-base text-gray-500 mt-1">
+          Across 15 countries
+        </p>
+
+      </div>
+
+
+      <div
+        class="text-2xl sm:text-3xl
+               font-bold
+               text-gray-900
+               mt-4">
+
+        73
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+
+    <div
+      class="w-full
+             bg-white
+             border border-gray-100
+             rounded-2xl
+             p-5 sm:p-7
+             flex flex-col
+             justify-between
+             min-h-[145px]
+             shadow-sm
+             hover:shadow-lg
+             hover:-translate-y-1
+             transition-all duration-300
+             cursor-pointer">
+
+      <div>
+
+        <h3 class="text-base font-bold text-gray-900">
+          ARR
+        </h3>
+
+        <p class="text-base text-gray-500 mt-1">
+          Annual recurring revenue
+        </p>
+
+      </div>
+
+
+      <div
+        class="text-2xl sm:text-3xl
+               font-bold
+               text-gray-900
+               mt-4">
+
+        $26.0M
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section
+  class="w-full
+         mx-0
+         bg-[#a9e6a9]
+         rounded-2xl
+         p-8 sm:p-12 md:p-16
+         text-center
+         border-2 border-[#8fd18f]
+         ring-2 ring-gray-200
+         ring-offset-4 sm:ring-offset-8
+         ring-offset-white
+         shadow-[0_8px_30px_rgba(0,0,0,0.06)]
+         relative overflow-hidden">
+
+
+  <div
+    class="max-w-5xl mx-auto
+           relative z-10
+           flex flex-col
+           items-center">
+
+
+    <!-- HEADING -->
+
+    <h1
+      class="text-3xl sm:text-4xl
+             md:text-[3.5rem]
+             font-normal
+             text-[#1f2937]
+             tracking-tight
+             leading-[1.1]
+             mb-7
+             max-w-4xl">
+
+      Grow your social presence with confidence
+
+    </h1>
+
+
+    <!-- BUTTON -->
+
+    <a
+      href="#"
+      class="inline-flex
+             items-center
+             gap-3
+             bg-[#212b36]
+             text-white
+             text-base
+             font-medium
+             px-9 py-4
+             rounded-full
+             w-full sm:w-auto
+             min-w-[220px]
+             justify-center
+             shadow-md
+             hover:bg-black
+             hover:shadow-xl
+             hover:-translate-y-1
+             transition-all duration-300
+             group
+             mb-6">
+
+      <span>
+        Get started for free
+      </span>
+
+
+      <svg
+        class="w-5 h-5
+               transition-transform duration-300
+               group-hover:translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        viewBox="0 0 24 24">
+
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M14 5l7 7m0 0l-7 7m7-7H3">
+        </path>
+
+      </svg>
+
+    </a>
+
+
+    <!-- MICROCOPY -->
+
+    <p class="text-sm font-medium text-gray-700/90">
+
+      No credit card needed. Free forever.
+
+    </p>
+
+  </div>
 
 </section>
 
 
-<!-- FOOTER -->
 
-<footer class="bg-[#1d3230] text-white rounded-t-2xl mt-20 px-10 py-20">
+<!-- ================= FOOTER ================= -->
+
+<footer
+  class="bg-[#1d3230]
+         text-white
+         rounded-t-2xl
+         mt-16 sm:mt-20
+         px-5 sm:px-8 lg:px-10
+         py-14 sm:py-20">
+
 
   <!-- TOP COLUMNS -->
-  <div class="grid grid-cols-6 gap-10 max-w-6xl mx-auto">
+
+  <div
+    class="grid
+           grid-cols-1
+           sm:grid-cols-2
+           md:grid-cols-3
+           lg:grid-cols-6
+           gap-8 lg:gap-10
+           max-w-6xl
+           mx-auto">
+
 
     <!-- FEATURES -->
+
     <div>
-      <h3 class="text-green-300 font-semibold mb-3">Features</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Create</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Publish</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Community</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Insights <span class="bg-green-200 text-black text-xs px-1 rounded">New</span></span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Collaborate</span>
+      <h3 class="text-green-300 font-semibold mb-3">
+        Features
+      </h3>
 
-      <h3 class="text-green-300 font-semibold mt-6 mb-3">Tools</h3>
+      <span class="block leading-7 text-sm sm:text-base
+                   hover:text-green-300
+                   hover:translate-x-1
+                   transition-all duration-200">
+        Create
+      </span>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">AI Assistant</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Start Page</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Integrations</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">iOS App</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Android App</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Browser Extension</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Social Media MCP</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Buffer API</span>
+      <span class="block leading-7 text-sm sm:text-base
+                   hover:text-green-300
+                   hover:translate-x-1
+                   transition-all duration-200">
+        Publish
+      </span>
+
+      <span class="block leading-7 text-sm sm:text-base
+                   hover:text-green-300
+                   hover:translate-x-1
+                   transition-all duration-200">
+        Community
+      </span>
+
+      <span class="block leading-7 text-sm sm:text-base
+                   hover:text-green-300
+                   hover:translate-x-1
+                   transition-all duration-200">
+        Insights
+        <span class="bg-green-200 text-black text-xs px-1 rounded">
+          New
+        </span>
+      </span>
+
+      <span class="block leading-7 text-sm sm:text-base
+                   hover:text-green-300
+                   hover:translate-x-1
+                   transition-all duration-200">
+        Collaborate
+      </span>
+
+
+      <h3 class="text-green-300 font-semibold mt-6 mb-3">
+        Tools
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">AI Assistant</span>
+      <span class="block leading-7 text-sm sm:text-base">Start Page</span>
+      <span class="block leading-7 text-sm sm:text-base">Integrations</span>
+      <span class="block leading-7 text-sm sm:text-base">iOS App</span>
+      <span class="block leading-7 text-sm sm:text-base">Android App</span>
+      <span class="block leading-7 text-sm sm:text-base">Browser Extension</span>
+      <span class="block leading-7 text-sm sm:text-base">Social Media MCP</span>
+      <span class="block leading-7 text-sm sm:text-base">Buffer API</span>
+
     </div>
 
 
     <!-- CHANNELS -->
-    <div>
-      <h3 class="text-green-300 font-semibold mb-3">Channels</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Bluesky</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Facebook</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Google Business Profile</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Instagram</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">LinkedIn</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Mastodon</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Pinterest</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Threads</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">TikTok</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">X</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">YouTube</span>
+    <div>
+
+      <h3 class="text-green-300 font-semibold mb-3">
+        Channels
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">Bluesky</span>
+      <span class="block leading-7 text-sm sm:text-base">Facebook</span>
+      <span class="block leading-7 text-sm sm:text-base">Google Business Profile</span>
+      <span class="block leading-7 text-sm sm:text-base">Instagram</span>
+      <span class="block leading-7 text-sm sm:text-base">LinkedIn</span>
+      <span class="block leading-7 text-sm sm:text-base">Mastodon</span>
+      <span class="block leading-7 text-sm sm:text-base">Pinterest</span>
+      <span class="block leading-7 text-sm sm:text-base">Threads</span>
+      <span class="block leading-7 text-sm sm:text-base">TikTok</span>
+      <span class="block leading-7 text-sm sm:text-base">X</span>
+      <span class="block leading-7 text-sm sm:text-base">YouTube</span>
+
     </div>
 
 
     <!-- MADE FOR -->
-    <div>
-      <h3 class="text-green-300 font-semibold mb-3">Made for</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Creators</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Small Business</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Agencies</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Nonprofits</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Higher Education</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Developers</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Startups</span>
+    <div>
+
+      <h3 class="text-green-300 font-semibold mb-3">
+        Made for
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">Creators</span>
+      <span class="block leading-7 text-sm sm:text-base">Small Business</span>
+      <span class="block leading-7 text-sm sm:text-base">Agencies</span>
+      <span class="block leading-7 text-sm sm:text-base">Nonprofits</span>
+      <span class="block leading-7 text-sm sm:text-base">Higher Education</span>
+      <span class="block leading-7 text-sm sm:text-base">Developers</span>
+      <span class="block leading-7 text-sm sm:text-base">Startups</span>
+
     </div>
 
 
     <!-- RESOURCES -->
-    <div>
-      <h3 class="text-green-300 font-semibold mb-3">Resources</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Blog</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Template Library</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Social Media Benchmarks</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Resource Library</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Social Media Terms Glossary</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Free Marketing Tools</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">AI Social Media Post Generator</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Compare Buffer</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Our Community</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Developer Docs</span>
+    <div>
+
+      <h3 class="text-green-300 font-semibold mb-3">
+        Resources
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">Blog</span>
+      <span class="block leading-7 text-sm sm:text-base">Template Library</span>
+      <span class="block leading-7 text-sm sm:text-base">Social Media Benchmarks</span>
+      <span class="block leading-7 text-sm sm:text-base">Resource Library</span>
+      <span class="block leading-7 text-sm sm:text-base">Social Media Terms Glossary</span>
+      <span class="block leading-7 text-sm sm:text-base">Free Marketing Tools</span>
+      <span class="block leading-7 text-sm sm:text-base">AI Social Media Post Generator</span>
+      <span class="block leading-7 text-sm sm:text-base">Compare Buffer</span>
+      <span class="block leading-7 text-sm sm:text-base">Our Community</span>
+      <span class="block leading-7 text-sm sm:text-base">Developer Docs</span>
+
     </div>
 
 
     <!-- SUPPORT -->
-    <div>
-      <h3 class="text-green-300 font-semibold mb-3">Support</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Help Center</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Status</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Changelog</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Request a Feature</span>
+    <div>
+
+      <h3 class="text-green-300 font-semibold mb-3">
+        Support
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">Help Center</span>
+      <span class="block leading-7 text-sm sm:text-base">Status</span>
+      <span class="block leading-7 text-sm sm:text-base">Changelog</span>
+      <span class="block leading-7 text-sm sm:text-base">Request a Feature</span>
+
 
       <h3 class="text-green-300 font-semibold mt-6 mb-3">
         Transparency
       </h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Open Hub</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Transparent Metrics</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Transparent Pricing</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Transparent Salaries</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Product Roadmap</span>
+      <span class="block leading-7 text-sm sm:text-base">Open Hub</span>
+      <span class="block leading-7 text-sm sm:text-base">Transparent Metrics</span>
+      <span class="block leading-7 text-sm sm:text-base">Transparent Pricing</span>
+      <span class="block leading-7 text-sm sm:text-base">Transparent Salaries</span>
+      <span class="block leading-7 text-sm sm:text-base">Product Roadmap</span>
+
     </div>
 
 
     <!-- COMPANY -->
-    <div>
-      <h3 class="text-green-300 font-semibold mb-3">Company</h3>
 
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">About</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Careers</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Press</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Partner Program</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Legal</span>
-      <span class="block hover:text-green-300 hover:translate-x-1 transition-all duration-200">Sitemap</span>
+    <div>
+
+      <h3 class="text-green-300 font-semibold mb-3">
+        Company
+      </h3>
+
+      <span class="block leading-7 text-sm sm:text-base">About</span>
+      <span class="block leading-7 text-sm sm:text-base">Careers</span>
+      <span class="block leading-7 text-sm sm:text-base">Press</span>
+      <span class="block leading-7 text-sm sm:text-base">Partner Program</span>
+      <span class="block leading-7 text-sm sm:text-base">Legal</span>
+      <span class="block leading-7 text-sm sm:text-base">Sitemap</span>
+
     </div>
 
   </div>
 
 
-  <!-- BOTTOM -->
-  <div class="max-w-6xl mx-auto flex items-end justify-between mt-16">
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+
+  <div
+    class="max-w-6xl
+           mx-auto
+           flex flex-col
+           lg:flex-row
+           items-start lg:items-end
+           justify-between
+           gap-10
+           mt-14 sm:mt-16">
+
 
     <!-- BUFFER LOGO -->
-    <div class="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
 
-      <div class="text-green-300 text-6xl">
+    <div
+      class="flex items-center gap-3
+             hover:scale-105
+             transition-transform duration-300">
+
+      <div class="text-green-300 text-4xl sm:text-6xl">
         ◆
       </div>
 
-      <h1 class="text-green-300 text-6xl font-bold">
+      <h1
+        class="text-green-300
+               text-4xl sm:text-6xl
+               font-bold">
+
         Buffer
+
       </h1>
 
     </div>
 
 
-    <!-- RIGHT SIDE -->
-    <div class="text-right">
+    <!-- RIGHT -->
+
+    <div class="text-left lg:text-right">
+
 
       <!-- LANGUAGE -->
-      <span class="text-green-300 mb-4">
+
+      <span class="text-green-300 mb-4 block">
         ◉ English⌄
       </span>
 
-      <!-- SOCIAL ICONS -->
-      <div class="flex items-center justify-end gap-6 text-2xl">
 
-        <i class="fa-brands fa-instagram hover:scale-125 cursor-pointer transition-transform duration-200"></i>
-        <i class="fa-brands fa-facebook hover:scale-125 cursor-pointer transition-transform duration-200"></i>
-        <i class="fa-brands fa-bluesky hover:scale-125 cursor-pointer transition-transform duration-200"></i>
-        <i class="fa-brands fa-x-twitter hover:scale-125 cursor-pointer transition-transform duration-200"></i>
-        <i class="fa-brands fa-linkedin hover:scale-125 cursor-pointer transition-transform duration-200"></i>
-        <i class="fa-brands fa-threads hover:scale-125 cursor-pointer transition-transform duration-200"></i>
+      <!-- SOCIAL ICONS -->
+
+      <div
+        class="flex flex-wrap
+               items-center
+               justify-start lg:justify-end
+               gap-5 sm:gap-6
+               text-2xl">
+
+        <i class="fa-brands fa-instagram
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
+
+        <i class="fa-brands fa-facebook
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
+
+        <i class="fa-brands fa-bluesky
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
+
+        <i class="fa-brands fa-x-twitter
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
+
+        <i class="fa-brands fa-linkedin
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
+
+        <i class="fa-brands fa-threads
+                  hover:scale-125
+                  cursor-pointer
+                  transition-transform duration-200">
+        </i>
 
       </div>
 
+
       <!-- COPYRIGHT -->
-      <span class="text-sm mt-5">
+
+      <span
+        class="text-xs sm:text-sm
+               mt-5
+               block
+               leading-6">
+
         Copyright ©2026 Buffer |
         Privacy |
         Terms |
         Security
+
       </span>
 
     </div>
@@ -1694,5 +3011,8 @@
   </div>
 
 </footer>
+
+<script src="./src/main.js"></script>
 </body>
+
 </html>
