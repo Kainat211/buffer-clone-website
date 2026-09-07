@@ -15,152 +15,208 @@
 <!-- ================= NAVBAR ================= -->
 
 <nav class="relative z-50 bg-white">
-<div class="w-full
-            px-0
-            h-16 sm:h-20
-            flex items-center">
+
+  <!-- NAVBAR TOP -->
+  <div class="max-w-7xl mx-auto
+              px-4 sm:px-6 lg:px-8
+              min-h-16 sm:min-h-20
+              flex items-center">
 
     <!-- LOGO -->
-    <div>
+    <div class="flex-shrink-0">
       <img src="public/images.png"
            class="w-24 sm:w-28"
            alt="Buffer Logo">
     </div>
-<!-- DESKTOP MENU -->
 
-<div class="hidden md:flex
-            flex-1
-            items-center
-            justify-center
-            gap-1 lg:gap-2
-            text-base lg:text-xl">
 
-  <a href="#"
-     class="px-3 lg:px-4 py-2 rounded-lg
-            hover:bg-gray-100 transition">
-    Features
-  </a>
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex
+                flex-1
+                items-center
+                justify-center
+                gap-1 lg:gap-2
+                text-base lg:text-xl">
 
-  <a href="#"
-     class="px-3 lg:px-4 py-2 rounded-lg
-            hover:bg-gray-100 transition">
-    Integrations
-  </a>
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
+        Features
+      </a>
 
-  <a href="#"
-     class="px-3 lg:px-4 py-2 rounded-lg
-            hover:bg-gray-100 transition">
-    Made for
-  </a>
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
+        Integrations
+      </a>
 
-  <a href="#"
-     class="px-3 lg:px-4 py-2 rounded-lg
-            hover:bg-gray-100 transition">
-    Resources
-  </a>
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
+        Made for
+      </a>
 
-  <a href="#"
-     class="px-3 lg:px-4 py-2 rounded-lg
-            hover:bg-gray-100 transition">
-    Pricing
-  </a>
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
+        Resources
+      </a>
 
-</div>
+      <a href="#"
+         class="px-3 lg:px-4 py-2 rounded-lg
+                hover:bg-gray-100 transition">
+        Pricing
+      </a>
+
+    </div>
 
 
     <!-- DESKTOP BUTTONS -->
-    <div class="hidden md:flex items-center gap-2 lg:gap-4">
+    <div class="hidden md:flex
+                items-center
+                justify-end
+                gap-2 lg:gap-4">
 
       <button
-        class="px-5 lg:px-7 py-2.5 lg:py-3
-               border border-gray-300 rounded-full
-               hover:bg-gray-100 hover:scale-105
+        class="px-5 lg:px-7
+               py-2.5 lg:py-3
+               border border-gray-300
+               rounded-full
+               whitespace-nowrap
+               hover:bg-gray-100
+               hover:scale-105
                transition duration-300">
         Log in
       </button>
 
       <button
-        class="bg-green-500 text-white
-               px-6 lg:px-11 py-2.5 lg:py-3
+        class="bg-green-500
+               text-white
+               px-6 lg:px-8
+               py-2.5 lg:py-3
                rounded-full
-               hover:bg-green-400 hover:scale-105
+               whitespace-nowrap
+               hover:bg-green-400
+               hover:scale-105
                transition duration-300">
         Get started for free
       </button>
 
     </div>
-<!-- MOBILE HAMBURGER --> 
-<button id="menuBtn" 
-        class="md:hidden 
-               ml-auto
-               w-10 h-10 
-               flex items-center justify-center 
-               text-gray-900 text-2xl 
-               rounded-lg 
-               hover:bg-gray-100 
-               transition" 
-        aria-label="Open menu" 
-        aria-expanded="false"> 
 
-  <i id="menuIcon" class="fa-solid fa-bars"></i> 
 
-</button>
+    <!-- MOBILE HAMBURGER -->
+    <button id="menuBtn"
+            class="md:hidden
+                   ml-auto
+                   w-10 h-10
+                   flex items-center justify-center
+                   text-gray-900
+                   text-2xl
+                   rounded-lg
+                   hover:bg-gray-100
+                   transition"
+            aria-label="Open menu"
+            aria-expanded="false">
+
+      <i id="menuIcon"
+         class="fa-solid fa-bars">
+      </i>
+
+    </button>
+
+  </div>
 
 
   <!-- ================= MOBILE MENU ================= -->
 
   <div id="mobileMenu"
        class="hidden md:hidden
+              w-full
               border-t border-gray-200
               bg-white
               px-4 py-5
               shadow-lg">
 
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-1">
 
       <a href="#"
-         class="px-4 py-3 rounded-lg
-                hover:bg-gray-100 transition">
+         class="block w-full
+                px-4 py-3
+                rounded-lg
+                text-gray-900
+                hover:bg-gray-100
+                transition">
         Features
       </a>
 
       <a href="#"
-         class="px-4 py-3 rounded-lg
-                hover:bg-gray-100 transition">
+         class="block w-full
+                px-4 py-3
+                rounded-lg
+                text-gray-900
+                hover:bg-gray-100
+                transition">
         Integrations
       </a>
 
       <a href="#"
-         class="px-4 py-3 rounded-lg
-                hover:bg-gray-100 transition">
+         class="block w-full
+                px-4 py-3
+                rounded-lg
+                text-gray-900
+                hover:bg-gray-100
+                transition">
         Made for
       </a>
 
       <a href="#"
-         class="px-4 py-3 rounded-lg
-                hover:bg-gray-100 transition">
+         class="block w-full
+                px-4 py-3
+                rounded-lg
+                text-gray-900
+                hover:bg-gray-100
+                transition">
         Resources
       </a>
 
       <a href="#"
-         class="px-4 py-3 rounded-lg
-                hover:bg-gray-100 transition">
+         class="block w-full
+                px-4 py-3
+                rounded-lg
+                text-gray-900
+                hover:bg-gray-100
+                transition">
         Pricing
       </a>
 
-      <div class="border-t border-gray-200 my-2"></div>
 
+      <!-- DIVIDER -->
+      <div class="border-t border-gray-200 my-3"></div>
+
+
+      <!-- LOGIN -->
       <button
-        class="w-full px-5 py-3
-               border border-gray-300 rounded-full
-               hover:bg-gray-100 transition">
+        class="w-full
+               px-5 py-3
+               border border-gray-300
+               rounded-full
+               text-gray-900
+               hover:bg-gray-100
+               transition">
         Log in
       </button>
 
+
+      <!-- GET STARTED -->
       <button
-        class="w-full bg-green-500 text-white
-               px-5 py-3 rounded-full
-               hover:bg-green-400 transition">
+        class="w-full
+               bg-green-500
+               text-white
+               px-5 py-3
+               rounded-full
+               hover:bg-green-400
+               transition">
         Get started for free
       </button>
 
@@ -169,6 +225,9 @@
   </div>
 
 </nav>
+
+
+
 
 
 <!-- ================= ANNOUNCEMENT BAR ================= -->
